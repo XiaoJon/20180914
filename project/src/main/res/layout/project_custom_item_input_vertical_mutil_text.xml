@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/custom_backgroud_color"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/project_custom_multi_text_vertical_title_style"
+        Tools:text="  标题" />
+
+    <EditText
+        android:id="@+id/et_input"
+        style="@style/project_custom_multi_text_vertical_input_style"
+        android:minHeight="44dp"
+        android:minLines="1" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        style="@style/custom_multi_text_icon_style"
+        android:visibility="invisible"
+        Tools:visibility="visible" />
+
+    <View style="@style/default_lint_style" />
+</LinearLayout>

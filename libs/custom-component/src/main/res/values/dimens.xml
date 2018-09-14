@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_content_default_height">36dp</dimen>
+    <dimen name="custom_content_start_end_padding">10dp</dimen>
+</resources>

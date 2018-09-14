@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jmui_more_menu_tl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F1F3"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/jmui_pick_from_local_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/new_photoalbum"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/jmui_picture"
+                android:textColor="#696969"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/jmui_pick_from_camera_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/new_takephoto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/jmui_take_photo"
+                android:textColor="#696969"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/jmui_send_location_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_location_btn"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/jmui_location"
+                android:textColor="#696969"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jmui_phone_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/jmui_phone_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/new_lib"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/jmui_file"
+                android:textColor="#696969"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/ib_at"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_at_in_chatview"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/jmui_at"
+                android:textColor="#696969"/>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

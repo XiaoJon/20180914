@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <EditText
+            android:id="@+id/new_pwd_et"
+            style="@style/login_inputPhone"
+            android:hint="@string/login_input_new_pwd"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            tools:text="" />
+
+        <EditText
+            android:id="@+id/repeat_new_pwd_et"
+            style="@style/login_inputPhone"
+            android:hint="@string/login_repeat_new_pwd"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            tools:text="" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/shape_btn_green"
+            android:gravity="center"
+            android:text="@string/login_system"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</FrameLayout>

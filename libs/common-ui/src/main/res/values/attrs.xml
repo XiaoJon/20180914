@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="circularProgressBarStyle" format="reference"/>
+
+    <declare-styleable name="CircularRing">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="completeProgressColor" format="color"/>
+        <attr name="circleRoundWidth" format="dimension"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="circleTextColor" format="color"/>
+        <attr name="circleNumber" format="integer"/>
+        <attr name="circleTextSize" format="dimension"/>
+        <attr name="circleColor1" format="color"/>
+        <attr name="circleColor2" format="color"/>
+        <attr name="circleColor3" format="color"/>
+        <attr name="circleColor4" format="color"/>
+        <attr name="circleColor5" format="color"/>
+    </declare-styleable>
+    <!-- 小助手设置Item -->
+    <declare-styleable name="helperSettingItem">
+        <attr name="itemName" format="string"/>
+        <attr name="isSelect" format="boolean"/>
+        <attr name="isLine" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CTTourHeaderScrollView">
+        <attr name="top_offset" format="dimension"/>
+    </declare-styleable>
+    <string-array name="im_search_type_menu">
+        <item>联系人</item>
+        <item>群聊</item>
+        <item>聊天记录</item>
+        <item>小助手</item>
+    </string-array>
+    <!-- 流式布局 -->
+    <declare-styleable name="custom_FlowLayout">
+        <attr name="custom_lineSpacing" format="dimension"/>
+        <attr name="custom_maxLine" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="drop_down_list_attr">
+        <attr name="isDropDownStyle" format="boolean"/>
+        <attr name="isOnBottomStyle" format="boolean"/>
+        <attr name="isAutoLoadOnBottom" format="boolean"/>
+    </declare-styleable>
+</resources>

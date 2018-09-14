@@ -1,0 +1,96 @@
+1->	在主模块gradle.properties添加依赖*debugComponent=statistic,custom,memo,project,login,attendance
+2->	创建runalone包,创建独立运行时需要的Application
+3->	创建applike包和*Applike.java文件,注册模块
+4->	添加gradle.properties文件,允许独立运行 isRunAlone=true,添加依赖模块debugComponent=statistic,custom,memo,project,login,attendance
+5->	配置build.gradle文件
+apply plugin: 'com.dd.comgradle'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true//分包配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "替换为模块名"]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    resourcePrefix "替换为模块名_"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':base')
+    compile project(':common-ui')
+    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+}
+
+combuild {
+//替换此处
+    applicationName = 'com.hjhq.teamface.attendance.application.AttendanceApplication'
+    isRegisterCompoAuto = true
+}
+6->	在需要被其他模块调用的Activity添加注解 @RouteNode(path = "/main", desc = "考勤主界面")
+7->	配置清单文件
+8-> 主模块不能依赖可以独立运行的模块
+
+
+
+jks -storepass 123456
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: shenzhen
+创建日期: 2017-2-10
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=lizewen, OU=poobo, O=company, L=shenzhen, ST=guangdong, C=86
+发布者: CN=lizewen, OU=poobo, O=company, L=shenzhen, ST=guangdong, C=86
+序列号: 1b45b529
+有效期开始日期: Fri Feb 10 15:24:28 CST 2017, 截止日期: Tue Feb 04 15:24:28 CST
+2042
+证书指纹:
+         MD5: AE:D9:C1:14:2A:EA:11:46:09:9C:41:02:73:C5:7B:9F
+         SHA1: 92:AA:98:B1:26:A0:CC:91:68:63:76:15:49:36:55:2D:42:F5:9D:99
+         SHA256: 07:0C:0E:00:A1:D9:8B:86:98:A1:4F:37:BE:0B:3B:C3:C2:DC:78:CB:6A:
+07:7A:91:2F:BB:53:2C:DB:58:15:90
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: B2 73 FD 83 A9 68 81 EB   6D A0 E2 16 36 2D 0F F3  .s...h..m...6-..
+0010: 83 A3 AE 26                                        ...&
+]
+]
+
+
+
+*******************************************
+*******************************************
+

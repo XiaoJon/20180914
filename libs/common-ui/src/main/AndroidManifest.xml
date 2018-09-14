@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hjhq.teamface.common">
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c9b0ba9cba70b1d6c712b2f90a18faab"/>
+        <!-- android:value="c9b0ba9cba70b1d6c712b2f90a18faab" -->
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="${bugly_app_id}"/>
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="${bugly_app_version}"/>
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="website"/>
+        <!-- 配置Bugly调试模式（true或者false）-->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true"/>
+
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <!-- 评论 -->
+        <activity android:name=".ui.comment.CommentActivity"/>
+        <!-- 动态 -->
+        <activity android:name=".ui.dynamic.DynamicActivity"/>
+        <!-- 语音播放 -->
+        <activity android:name=".ui.voice.VoicePlayActivity"/>
+        <!-- 查看大图 -->
+        <activity android:name=".ui.ImagePagerActivity"/>
+        <!-- 选人 -->
+        <activity android:name=".ui.member.SelectMemberActivity"/>
+        <activity android:name=".ui.member.SearchMemberActivity"/>
+        <activity android:name=".ui.member.SelectRangeActivity"/>
+        <activity android:name=".ui.member.SelectRangeDepartmentActivity"/>
+        <activity android:name=".ui.location.ViewAddressPresenter"/>
+        <activity android:name=".ui.location.LocationPresenter"/>
+        <activity android:name=".ui.time.DateTimeSelectPresenter"/>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <!-- Required. AppKey copied from Portal -->
+        <!--Master Secret ? aeb8c746b55f187e2185dada-->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="16d95c5556bcde11277431dc"/>
+
+        <activity
+            android:name="com.hjhq.teamface.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--全屏查看图片-->
+        <activity android:name=".activity.FullscreenViewImageActivity"/>
+        <!--编辑-->
+        <activity android:name=".activity.EditActivity"/>
+        <!--扫码-->
+        <activity android:name=".activity.CaptureActivity"/>
+        <!--查看条形码-->
+        <activity android:name=".activity.ViewBarcodeImageActivity"/>
+        <!--用户协议-->
+        <activity android:name=".activity.ViewUserProtocolActivity"/>
+    </application>
+
+</manifest>

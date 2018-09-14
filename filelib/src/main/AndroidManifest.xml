@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.hjhq.teamface.filelib"
+    >
+
+    <application
+        android:name=".application.FilelibApplication"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".FilelibTestActivity"/>
+        <activity android:name=".activity.AddFolderActivity"/>
+        <activity android:name=".activity.ChooseColorActivity"/>
+        <activity android:name=".activity.DownloadedFileActivity"/>
+        <activity android:name=".activity.FileDetailActivity"/>
+        <activity android:name=".activity.FileDownloadHistoryActivity"/>
+        <activity android:name=".activity.FileHistoryVersionActivity"/>
+        <activity android:name=".activity.FileLibActivity"/>
+        <activity android:name=".activity.FileMainActivity"/>
+        <activity android:name=".activity.FileOnlinePreviewActivity"/>
+        <activity android:name=".activity.FolderAuthManageActivity"/>
+        <activity android:name=".activity.MoveFileActivity"/>
+        <activity android:name=".activity.ProjectListActivity"/>
+        <activity android:name=".activity.RenameFileActivity"/>
+        <activity android:name=".activity.SearchFileActivity"/>
+        <activity android:name=".activity.SelectFileActivity"/>
+        <activity android:name=".activity.SelectRootFileActivity"/>
+        <activity android:name=".activity.SetMemberFolderAuthActivity"/>
+        <activity android:name=".activity.SharedFileActivity"/>
+    </application>
+
+</manifest>

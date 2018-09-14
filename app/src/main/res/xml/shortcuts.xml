@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第一个静态shortcut -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/logo"
+        android:shortcutDisabledMessage="@string/file_library"
+        android:shortcutId="static_one"
+        android:shortcutLongLabel="@string/file_library"
+        android:shortcutShortLabel="@string/file_library">
+        <!--
+            一个shortcut，当有多个intents与之相关联时，在用户启动该shortcut时，最先呈现给用户的是
+            <intent>...</intent>集合中最后一个intent操作事件。
+            即这里创建了一个intent的回退栈，最后一个才是被快捷方式打开的那个。
+        -->
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.hjhq.teamface.oa.login.ui.SplashActivity"
+            android:targetPackage="com.hjhq.teamface"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.hjhq.teamface.filelib.activity.FileLibActivity"
+            android:targetPackage="com.hjhq.teamface"/>
+
+
+    </shortcut>
+    <!-- 第二个静态shortcut -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/__picker_ic_camera_p"
+
+        android:shortcutDisabledMessage="@string/scan_qr_code"
+        android:shortcutId="static_two"
+        android:shortcutLongLabel="@string/scan_qr_code"
+        android:shortcutShortLabel="@string/scan_qr_code">
+
+
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.hjhq.teamface.common.activity.CaptureActivity"
+            android:targetPackage="com.hjhq.teamface"/>
+
+    </shortcut>
+</shortcuts>

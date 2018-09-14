@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/titlebar_back"
+            android:layout_width="60dp"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cancel"
+                android:textColor="@color/__picker_gray_69"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleBar_centerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:lines="1"
+            android:text="@string/im_create_group_chat"
+            android:textColor="@color/black_4a"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/title_bar_right_menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:text="@string/im_create"
+            android:textColor="@color/main_green"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/act_create_group_et_Name"
+                style="@style/custom_newBlackEtCASize22Tv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:hint="@string/im_create_group_chat_hint"
+                android:maxLength="12"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16dp"/>
+
+            <include layout="@layout/line_margin_10dp"/>
+
+
+            <com.hjhq.teamface.basis.view.member.AddMemberView
+
+                android:id="@+id/member_create_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/__picker_gray_f2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/im_group_chat_notice"
+                android:textColor="@color/gray_bb"
+                android:textSize="@dimen/text_size_16"/>
+
+            <EditText
+                android:id="@+id/act_create_group_et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/im_group_chat_notice_hint"
+                android:maxLength="100"
+                android:minHeight="80dp"
+                android:paddingLeft="@dimen/default_padding_left"
+                android:paddingRight="@dimen/default_padding_left"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/gray_bb"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

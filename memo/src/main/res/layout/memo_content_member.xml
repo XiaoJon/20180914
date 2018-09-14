@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="64dp"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/memo_add_location"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="3"
+        android:text="六六六六六六"
+        android:textSize="14dp"/>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignRight="@+id/iv_avatar"
+        android:layout_alignTop="@+id/iv_avatar"
+        android:src="@drawable/icon_cancel"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+
+</RelativeLayout>

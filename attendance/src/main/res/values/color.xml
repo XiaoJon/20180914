@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="attendance_dialog_bg">#FFFFFF</color>
+    <!--提示颜色-->
+    <color name="attendance_state_1">#5AA3FB</color>
+    <color name="attendance_state_2">#F9A244</color>
+    <color name="attendance_state_3">#FF5E00</color>
+    <color name="attendance_state_4">#F42E2E</color>
+    <color name="attendance_state_5">#4B4948</color>
+
+    <!--打卡按钮背景色-->
+    <color name="attendance_bg_11">#5AA3FB</color>
+    <color name="attendance_bg_12">#2958DB</color>
+    <color name="attendance_bg_21">#FCC15B</color>
+    <color name="attendance_bg_22">#FF850A</color>
+    <color name="attendance_bg_31">#02D39A</color>
+    <color name="attendance_bg_32">#05B68C</color>
+    <color name="attendance_bg_41">#CCCCCC</color>
+    <color name="attendance_bg_42">#CCCCCC</color>
+
+
+    <color name="attendance_333333">#333333</color>
+    <color name="attendance_666666">#666666</color>
+    <color name="attendance_999999">#999999</color>
+
+
+</resources>

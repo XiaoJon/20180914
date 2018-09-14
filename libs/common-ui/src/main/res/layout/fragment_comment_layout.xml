@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjhq.teamface.common.ui.comment.CommentView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_app_backgroud_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_show_more_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:drawableEnd="@drawable/icon_comment_top_arrows"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="显示更多评论"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/sp_12"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_move_detail_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/jmui_send_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_f2"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+
+                <ImageButton
+                    android:id="@+id/jmui_switch_voice_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_voice" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.hjhq.teamface.common.view.EmoticonsEditText
+                        android:id="@+id/jmui_chat_input_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jmui_chat_input_bg"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="start"
+                        android:hint="@string/say_something"
+                        android:inputType="textMultiLine"
+                        android:labelFor="@+id/jmui_chat_input_et"
+                        android:maxLength="140"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@drawable/jmui_text_cursor_bg" />
+
+                    <com.hjhq.teamface.common.view.RecordVoiceButton
+                        android:id="@+id/jmui_voice_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jmui_voice_bg"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/record_voice_hint"
+                        android:textColor="@color/black_4a"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/jmui_expression_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/gray_f2"
+                        android:src="@drawable/icon_emoji" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_send_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp">
+
+                    <Button
+                        android:id="@+id/jmui_send_msg_btn"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/setting_button_corner_select"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/send"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/jmui_add_file_btn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_more"
+                        android:focusable="true"
+                        android:gravity="center_horizontal|center_vertical" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:horizontalSpacing="16dp"
+                android:listSelector="#00000000"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="16dp"
+                android:visibility="gone" />
+
+            <TableLayout
+                android:id="@+id/jmui_more_menu_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F1F3"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/jmui_pick_from_local_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/new_photoalbum" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/text_picture"
+                            android:textColor="#696969" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/jmui_pick_from_camera_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/new_takephoto" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/take_photo"
+                            android:textColor="#696969" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/jmui_pick_from_file_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/new_lib" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/text_file"
+                            android:textColor="#696969" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/jmui_pick_from_member_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_at_member" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="\@成员"
+                            android:textColor="#696969" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.hjhq.teamface.common.ui.comment.CommentView>

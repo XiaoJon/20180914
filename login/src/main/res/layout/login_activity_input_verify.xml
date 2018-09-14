@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="42dp"
+    android:orientation="vertical"
+    android:paddingEnd="30dp"
+    android:paddingStart="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_input_verify"
+        android:textColor="@color/black_17"
+        android:textSize="@dimen/text_size_18" />
+
+    <com.hjhq.teamface.login.view.verify.SecurityCodeView
+        android:id="@+id/verification_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal" />
+
+    <com.hjhq.teamface.login.view.verify.CountDownButton
+        android:id="@+id/timmer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="start|center_vertical"
+        android:text="@string/login_get_verification_code"
+        android:textAllCaps="false"
+        android:textColor="@color/main_green"
+        app:login_countDown="0"
+        app:login_countDownFormat="%ds 重新发送验证码"
+        app:login_countDownInterval="1000" />
+
+    <Button
+        android:id="@+id/next_step_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/login_selector_btn_green"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

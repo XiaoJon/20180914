@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/white">
+
+    <Button
+        android:id="@+id/action_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/attendance_action_bg5"
+        android:elevation="10dp"
+        android:paddingBottom="5dp"
+        android:text="13:15:01  下班打卡"
+        android:textColor="@color/white"
+        android:textSize="19dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp">
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="42dp"
+            android:src="@drawable/state_checked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_state"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="已进入打卡范围:思创科技大厦…… "
+            android:textColor="#666666"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

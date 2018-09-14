@@ -1,0 +1,13 @@
+auto generated, do not change !!!! 
+
+HOST : email
+
+邮件列表主界面
+/email
+
+邮件详情
+/detail
+
+新增,编辑,回复,转发邮件
+/new_email
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_conversation_list_root"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_nav"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_to_next"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/anchor"
+        android:ellipsize="middle"
+        android:lines="1"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/black_4a"
+        android:textSize="14sp"
+        tools:text="张小发大水发发送到法师打发斯蒂芬放大法师打发打发是的发送天"/>
+</RelativeLayout>

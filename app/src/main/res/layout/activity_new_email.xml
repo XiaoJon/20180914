@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/email_new_action_bg"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="插入数据表单"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_like"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/email_new_action_bg"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="插入邮件模板"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_signature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/email_new_action_bg"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="使用签名"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_action"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/arrow_up"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text11"
+                    android:minWidth="100dp"
+                    android:text="发件人"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/rl_more_1"
+                    android:layout_toRightOf="@id/text12"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="ssshyu001@163.com"
+                    android:textColor="@color/black_4a"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/jmui_more_menu"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text21"
+                    android:minWidth="100dp"
+                    android:text="收件人"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <com.hjhq.teamface.common.view.EmoticonsEditText
+                    android:id="@+id/text23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/rl_more_2"
+                    android:layout_toRightOf="@id/text22"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="请输入(必填)"
+                    android:lines="1"
+                    android:textColor="@color/black_4a"
+                    android:textColorHint="@color/gray_d7"
+                    android:textCursorDrawable="@drawable/jmui_text_cursor_bg"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_3"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/jmui_more_menu"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="  "
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text31"
+                    android:minWidth="100dp"
+                    android:text="抄送人"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <com.hjhq.teamface.common.view.EmoticonsEditText
+                    android:id="@+id/text33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/rl_more_3"
+                    android:layout_toRightOf="@id/text32"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="请输入(非必填)"
+                    android:lines="1"
+                    android:textColor="@color/black_4a"
+                    android:textColorHint="@color/gray_d7"
+                    android:textCursorDrawable="@drawable/jmui_text_cursor_bg"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_4"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/jmui_more_menu"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="  "
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text41"
+                    android:minWidth="100dp"
+                    android:text="密送人"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <com.hjhq.teamface.common.view.EmoticonsEditText
+                    android:id="@+id/text43"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/rl_more_4"
+                    android:layout_toRightOf="@id/text42"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="请输入(非必填)"
+                    android:lines="1"
+                    android:textColor="@color/black_4a"
+                    android:textColorHint="@color/gray_d7"
+                    android:textCursorDrawable="@drawable/jmui_text_cursor_bg"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_7"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/jmui_more_menu"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/rl_more_7"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="50dp">
+
+
+                <TextView
+                    android:id="@+id/text51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text51"
+                    android:minWidth="100dp"
+                    android:text="主题"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/text53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/text52"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入(必填)"
+                    android:maxLength="100"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/black_4a"
+                    android:textColorHint="@color/gray_d7"
+                    android:textCursorDrawable="@drawable/jmui_text_cursor_bg"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/text61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="  "
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text61"
+                    android:minWidth="100dp"
+                    android:text="附件"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="上传附件"
+                    android:textColor="@color/main_green"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="邮件正文"
+                android:minHeight="200dp"
+                android:padding="16dp"
+                android:textColorHint="@color/gray_bb"
+                android:textCursorDrawable="@drawable/jmui_text_cursor_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="480dp">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

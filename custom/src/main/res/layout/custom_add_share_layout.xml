@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_app_backgroud_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="指定的数据共享设置，可将部门或成员一起共享此单个数据。"
+        android:textColor="@color/black_4a"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout style="@style/custom_horizontal_layout_style">
+
+        <TextView
+            style="@style/custom_multi_text_horizontal_title_style"
+            android:layout_marginTop="11dp"
+            android:paddingStart="16dp"
+            android:text="共享给" />
+
+        <com.hjhq.teamface.basis.view.member.MembersView
+            android:id="@+id/member_view"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/margin_left_lint_style" />
+
+    <LinearLayout android:id="@+id/ll_permission" style="@style/custom_horizontal_layout_style">
+
+        <TextView
+            style="@style/custom_input_horizontal_title_style"
+            android:text="访问权限" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/custom_select_horizontal_content_style"
+            android:text="只读" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:src="@drawable/icon_to_next"
+            style="@style/custom_default_icon_style" />
+    </LinearLayout>
+</LinearLayout>

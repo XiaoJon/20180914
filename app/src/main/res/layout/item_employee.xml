@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_root"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:textColor="@color/gray_bb"
+        android:textSize="14sp"
+        tools:text="深圳汇聚华企科技有限公司"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_principal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/item_bg_color"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/__picker_camera"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:lines="1"
+            android:textColor="@color/black_17"
+            android:textSize="@dimen/text_size_16"
+            tools:text="ssdfasdf"/>
+
+        <TextView
+            android:id="@+id/tv_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:lines="1"
+            android:textColor="@color/gray_bb"
+            android:textSize="@dimen/text_size_14"
+            tools:text="ssdfasdf"/>
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/finish"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

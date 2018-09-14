@@ -1,0 +1,54 @@
+//apply plugin: 'com.android.library'
+apply plugin: 'com.dd.comgradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true//分包配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "statistic"]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    resourcePrefix "statistic_"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':common-ui')
+    compile 'com.android.support:multidex:1.0.1'
+    //viewpager指示器
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    compile project(':componentservice')
+    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+combuild {
+    applicationName = 'com.hjhq.teamface.statistic.application.StatisticApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
+}

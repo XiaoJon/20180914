@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/node_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:fontFamily="monospace"
+        android:orientation="horizontal"
+        tools:text="四级">
+
+        <ImageView
+            android:id="@+id/arrow_img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/pull_up_list" />
+        <!--android:src="@drawable/ic_keyboard_arrow_right_white_24px"-->
+
+        <TextView
+            android:id="@+id/node_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"
+            tools:text="4级分类" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/cb_normal_gray_selector"
+        android:button="@null"
+        android:focusable="false" />
+
+    <include layout="@layout/line" />
+</RelativeLayout>

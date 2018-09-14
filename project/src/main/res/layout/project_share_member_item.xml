@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_nav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            tools:src="@drawable/icon_default"/>
+
+
+        <TextView
+            android:id="@+id/tv_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_nav"
+            android:layout_toEndOf="@+id/iv_nav"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/black_4a"
+            android:textSize="16dp"
+            tools:text="姓名姓名"/>
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_nav"
+            android:layout_toEndOf="@+id/iv_nav"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/gray_69"
+            android:textSize="14dp"
+            tools:text="职位职位"/>
+
+        <ImageView
+            android:id="@+id/next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/next1"
+            android:text="项目负责人"
+            android:textColor="@color/app_blue"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/anchor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_bb"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

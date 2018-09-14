@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_app_backgroud_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/project_custom_horizontal_layout_style">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/project_custom_input_horizontal_title_style"
+            tools:text="  子表单" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:text="＋ 增加栏目"
+            android:textColor="@color/green_20"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_app_backgroud_color"
+        android:orientation="vertical" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="message_read_title_name">
+        <item>已读成员</item>
+        <item>未读成员</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="custom_newContentSize14Tv">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">#0C0C0C</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="custom_newBlack4ASize14Tv">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/black_4a</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--跨Activity共享shitu动画-->
+    <style name="AnimationActivity">
+        <item name="android:windowContentTransitions"
+              tools:targetApi="lollipop">true
+        </item>
+    </style>
+
+    <style name="custom_newGray69Size14Tv">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/gray_69</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="custom_newBlackEtCASize22Tv">
+        <item name="android:textColorHint">@color/gray_ca</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black_4a</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="record_voice_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@drawable/jmui_round_background</item>
+    </style>
+
+    <!-- 搜索 -->
+    <style name="StyleEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_search_bar</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableLeft">@drawable/search</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gray_bb</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:hint">搜索</item>
+    </style>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/ll_sub_list"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_sub_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/text_size_12"
+            tools:text="需求分析" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/tv_sub_list_name"
+            android:src="@drawable/project_icon_spread" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_f2" />
+    </RelativeLayout>
+
+    <com.woxthebox.draglistview.BoardView
+        android:id="@+id/board_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_point"
+        android:layout_below="@+id/ll_sub_list"
+        android:paddingTop="15dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/ll_point"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="17dp"
+        android:paddingStart="17dp">
+
+        <View
+            android:id="@+id/add_point"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/project_task_icon_gray_add" />
+    </LinearLayout>
+</RelativeLayout>

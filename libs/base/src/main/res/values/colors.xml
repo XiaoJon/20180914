@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="state_toast_background_color">#333333</color><!--显示状态toast背景色-->
+    <!-- *****************全局颜色****************** -->
+    <color name="title_bar_txt_color">#212121</color><!--标题  文本颜色-->
+    <!--左边标题文本颜色-->
+    <color name="title_bar_right_txt_default_color">#69696C</color><!--右边标题文本默认颜色-->
+    <color name="title_bar_right_txt_bright_color">#3689E9</color><!--右边标题文本亮眼的颜色-->
+    <color name="title_background_color">#FFFFFF</color><!--标题背景颜色-->
+
+    <color name="default_line_color">#E7E7E7</color><!--默认下划线颜色-->
+    <color name="default_app_backgroud_color">#F2F2F2</color><!--默认app背景颜色-->
+    <color name="pager_bg">#CA000000</color>
+    <color name="selected_bg">#44000000</color>
+    <color name="black_40">#282828</color>
+    <color name="common_primary">#f3f3f3</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="line">#DDDDDD</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="text_gray1">#777777</color>
+    <color name="text_40">#282828</color>
+    <color name="text_80">#505050</color>
+    <color name="text_120">#787878</color>
+    <color name="item_photo_border_selected">#3689E9</color>
+    <color name="item_photo_border_n">#fff</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_green">#3689E9</color>
+    <color name="main_green_tran">#883689E9</color>
+
+    <color name="item_bg_color">#FFFFFF</color><!--条目背景颜色-->
+    <color name="item_must_color">#FF7663</color><!--必填项 * 颜色-->
+    <color name="custom_title_color">#333333</color><!--自定义组件title的颜色-->
+    <color name="custom_backgroud_color">#FFFFFF</color><!--自定义组件背景颜色-->
+    <color name="custom_content_color">#666666</color><!--自定义组件content的颜色-->
+    <color name="custom_hint_color">#CCCCCC</color><!--自定义组件hint的颜色-->
+
+    <color name="url_color">#008FE5</color><!--超链接颜色-->
+    <color name="email_menu_item_selected">#EBEDF0</color>
+    <color name="email_unread_dot_color">#108EE9</color>
+    <color name="center_toast_background_color">#333333</color><!--中间toast背景色-->
+    <color name="app_blue">#3689E9</color><!--app主题-->
+    <color name="dialog_item_pressed_color">#E6E6E7</color><!--dialog 按下时颜色-->
+    <color name="dialog_item_normal_color">#FFFFFF</color><!--dialog 正常时颜色-->
+
+
+    <!-- *****************全局颜色****************** -->
+    <color name="white">#ffffff</color>
+    <color name="gray">#333333</color>
+    <!-- 分割线 -->
+    <color name="transparent">#00000000</color><!--透明色 -->
+    <color name="line_color">#d9d9d9</color>
+    <!-- 所有背景色 -->
+    <color name="all_backgroud_color">#f7f8fa</color>
+    <!--黄色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="gray_8c">#8C96AB</color>
+    <color name="orange_color">#FFAB36</color>
+    <color name="phone_color">#4A90E2</color>
+
+
+    <!--文件夹颜色-->
+    <color name="_FF1D32">#FF1D32</color>
+    <color name="_FF7777">#FF7777</color>
+    <color name="_DD361A">#DD361A</color>
+    <color name="_DB6A20">#DB6A20</color>
+    <color name="_F57221">#FABC01</color>
+    <color name="_FFEB57">#FFEB57</color>
+    <color name="_F9B239">#F9B239</color>
+    <color name="_B4E550">#B4E550</color>
+    <color name="_73B32D">#73B32D</color>
+    <color name="_119E29">#119E29</color>
+    <color name="_00781B">#00781B</color>
+    <color name="_00CFC9">#00CFC9</color>
+    <color name="_51D0B1">#51D0B1</color>
+    <color name="_5CC1FC">#5CC1FC</color>
+    <color name="_0091FA">#0091FA</color>
+    <color name="_3057E5">#3057E5</color>
+    <color name="_0051AF">#0051AF</color>
+    <color name="_FF85BE">#FF85BE</color>
+    <color name="_F52E94">#F52E94</color>
+    <color name="_9856D9">#9856D9</color>
+    <color name="_323232">#323232</color>
+    <color name="_5821A7">#5821A7</color>
+    <color name="_C0C0C0">#C0C0C0</color>
+    <color name="_8C8C8C">#8C8C8C</color>
+    <color name="_000000">#000000</color>
+    <color name="_424242">#424242</color>
+
+    <color name="text_gray">#69696C</color>
+    <color name="gray_c8">#C8C8C8</color>
+    <color name="gray_c2">#C2C2C2</color>
+    <color name="main_green_20">#1020779A</color>
+    <color name="top">#50F1FFF1</color>
+    <color name="gray_f2">#F2F2F2</color>
+    <color name="gray_69">#69696C</color>
+    <color name="gray_ef">#EFEFF4</color>
+    <color name="gray_e7">#E7E7E7</color>
+    <color name="gray_eb">#EBEDF0</color>
+    <color name="gray_a0">#A0A0AE</color>
+    <color name="gray_a9">#A9A9A9</color>
+    <color name="gray_4a">#4A4A4A</color>
+    <color name="gray_41">#414141</color>
+    <color name="gray_b2">#B2B2B2</color>
+    <color name="gray_bb">#BBBBC3</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_90">#909090</color>
+    <color name="black_17">#17171A</color>
+    <color name="black_4a">#4A4A4A</color>
+    <color name="black_2e">#2E2E2E</color>
+    <color name="black_22">#222222</color>
+    <color name="calendar_select_bg">#FF6260</color>
+    <color name="red_f4">#F41C0D</color><!--红色 -->
+    <color name="green_20_40">#283689E9</color>
+    <color name="green_20">#3689E9</color>
+    <color name="orange">#FF6F00</color>
+    <color name="yellow_ff">#FFEC00</color>
+    <color name="gray_ca">#CACAD0</color>
+    <color name="_20BF9A">#3689E9</color>
+    <color name="allTrans">#00ffffff</color>
+    <color name="orange_f5">#F5A623</color>
+    <color name="gray_d7">#D7DCE0</color>
+    <!--企信-->
+    <color name="jmui_chat_text_color">#373334</color>
+    <color name="jmui_item_click_bg_color">#dddddd</color>
+    <color name="jmui_jpush_blue">#3f80dc</color>
+    <color name="jmui_send_press_color">#346fc3</color>
+    <color name="jmui_default_cursor_color">#8db4eb</color>
+    <color name="jmui_chat_detail_split_line_color">#d4d4d4</color>
+    <color name="jmui_translucent_background">#60000000</color>
+    <color name="jmui_reset_password_title_color">#4e4e4e</color>
+    <color name="black10">#19000000</color>
+    <color name="chat_detail_item_hit_color">#555555</color>
+    <color name="chat_text_color">#555555</color>
+</resources>

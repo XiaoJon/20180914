@@ -1,0 +1,16 @@
+auto generated, do not change !!!! 
+
+HOST : memo
+
+新增备忘录
+/add
+
+选择备忘录
+/choose_memo
+
+备忘录详情
+/detail
+
+备忘录列表
+/main
+

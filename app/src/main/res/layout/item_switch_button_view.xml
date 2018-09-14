@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_app_backgroud_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/visible_range_ll"
+        style="@style/newItemLL">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/newItemLeftTv"
+            android:layout_weight="1"
+            android:text="仅协作人可见"/>
+
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="51dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/ios_thumb_selector"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp"/>
+
+
+    </LinearLayout>
+
+    <View style="@style/margin_left_lint_style"/>
+
+
+</LinearLayout>

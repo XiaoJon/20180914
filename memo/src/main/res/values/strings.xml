@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="memo_app_name">备忘录</string>
+    <string name="memo_main_title">备忘录</string>
+    <string name="memo_list_title">备忘录(%s)</string>
+    <string name="memo_edit">编辑</string>
+    <string name="memo_menu_all">全部备忘</string>
+    <string name="memo_menu_mine">我创建的</string>
+    <string name="memo_menu_share">共享给我</string>
+    <string name="memo_menu_delete">已删除</string>
+    <string name="memo_delete">删除</string>
+    <string name="memo_delete_">确认删除</string>
+    <string name="memo_quit_share">退出共享</string>
+    <string name="memo_delete_forver">彻底删除</string>
+    <string name="memo_delete_all">删除</string>
+    <string name="memo_recover">恢复备忘</string>
+    <string name="memo_select_num">已选%s项</string>
+    <string name="memo_text_all">全部</string>
+    <string name="memo_text_mine">创建</string>
+    <string name="memo_text_share">共享</string>
+    <string name="memo_text_delete">删除</string>
+    <!--备忘录选择提醒时间和方式界面-->
+    <string name="memo_remind_time_title">提醒时间</string>
+    <string name="memo_remind_time_warn">提醒时间不能小于当前时间</string>
+    <string name="memo_please_select_sth">请选择</string>
+    <string name="memo_remind_me_only">仅提醒自己</string>
+    <string name="memo_remind_me_only_hint">如果有设置共享人，不会提醒他们</string>
+    <!--新增备忘录界面-->
+    <string name="memo_share_left_title">共享</string>
+
+</resources>

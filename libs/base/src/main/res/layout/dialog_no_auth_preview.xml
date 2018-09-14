@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/dialog_resend_mail_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/rl_receive_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dialog_phone_tip"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black_17"
+            android:textSize="16sp"
+            tools:text="标题标题标题标题标题标题标题"/>
+
+        <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:maxWidth="100dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/gray_a0"
+            android:textSize="12sp"
+            tools:text="负责人：小帅"/>
+
+        <TextView
+            android:id="@+id/tv_receive_file_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/gray_a0"
+            android:textSize="12sp"
+            tools:text="截止时间：2017-11-25"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

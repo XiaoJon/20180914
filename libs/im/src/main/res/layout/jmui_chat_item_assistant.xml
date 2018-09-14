@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/jmui_chat_item_receive_layout">
+
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"
+        android:background="@drawable/im_chat_time_bg"
+        android:textColor="@color/white"
+        tools:text="12:44"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_recever_avatar_iv"
+            style="@style/jmui_chat_item_receiver_avatar_style"/>
+        />
+
+        <TextView
+            android:id="@+id/jmui_display_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/jmui_recever_avatar_iv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="15dp"
+            android:paddingTop="1dp"
+            android:textColor="#797979"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:text="标题标题标题标题阿道夫536356345654打发防守打法标"/>
+
+        <TextView
+            android:id="@+id/red_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/circle_red_with_padding"/>
+
+        <LinearLayout
+            android:id="@+id/rl_receive_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/jmui_display_name_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/jmui_recever_avatar_iv"
+            android:background="@drawable/app_assistant_item_bg"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#17171A"
+                android:textSize="16sp"
+                tools:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"/>
+
+            <TextView
+                android:id="@+id/tv_receive_file_sender_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:autoLink="web"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#A9A9A9"
+                android:textSize="14dp"
+                android:visibility="visible"
+                tools:text="负责人：小帅\n fadfadfdsfadfadf"/>
+
+            <TextView
+                android:id="@+id/tv_receive_file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#A9A9A9"
+                android:textSize="14dp"
+                android:visibility="gone"
+                tools:text="截止时间：2017-11-25"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

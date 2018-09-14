@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minHeight="55dp"
+        android:text="商品名"
+        android:textColor="@color/gray_69"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/tv_title"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minHeight="55dp"
+        android:text="嘎达发放"
+        android:textColor="@color/gray_4a"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/content"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minHeight="55dp"
+        android:text="条"
+        android:textColor="@color/gray_4a"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_e7"/>
+
+</RelativeLayout>

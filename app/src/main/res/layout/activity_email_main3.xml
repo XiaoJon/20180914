@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjhq.teamface.view.email.ObservableScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/_5CC1FC"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="这是菜单"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="480dp"
+            android:layout_height="match_parent"
+            android:elevation="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/menu_detail"/>
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/jmui_more_menu"/>
+
+                <TextView
+                    android:id="@+id/rv_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/add"
+                    android:text="已读"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="收件箱"
+                    android:textColor="@color/title_bar_txt_color"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/add"
+                    android:layout_toRightOf="@+id/title"
+                    android:text="40"/>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_toolbar"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</com.hjhq.teamface.view.email.ObservableScrollView>
+

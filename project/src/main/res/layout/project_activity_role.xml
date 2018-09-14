@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_member"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:paddingEnd="18dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/project_member"
+            android:textColor="@color/_323232"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/finish"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_margin" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_visitor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingEnd="18dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/project_visitor"
+            android:textColor="@color/_323232"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/project_textview" />
+
+        <ImageView
+            android:id="@+id/iv_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finish"
+            android:layout_alignTop="@+id/project_textview"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

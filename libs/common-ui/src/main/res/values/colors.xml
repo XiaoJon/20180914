@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--任务优先级颜色-->
+    <color name="project_task_most_emergency">#FF6F00</color>
+    <color name="project_task_emergency">#FFC057</color>
+    <color name="project_task_normal">#33CCCB</color>
+    <color name="project_work_task_magic_indicator_color">#FC591F</color>
+    <color name="new_btn_bg_press">#00a37a</color>
+    <color name="default_green">#14aa87</color>
+
+
+</resources>

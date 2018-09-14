@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/jmui_chat_item_send_layout">
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_recever_avatar_iv"
+            style="@style/jmui_chat_item_receiver_avatar_style"/>
+
+        <RelativeLayout
+            android:id="@+id/jmui_send_file_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jmui_recever_avatar_iv">
+
+            <LinearLayout
+                android:id="@+id/jmui_receive_file_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/receive_msg_normal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_document"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_default"/>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:id="@+id/jmui_msg_content_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxWidth="150dp"
+                        android:text="发发发"
+                        android:textColor="#A9A9A9"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/jmui_send_file_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="发发发"
+                        android:textColor="#A9A9A9"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/jmui_progress_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/jmui_fail_resend_ib"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/jmui_send_file_rl"
+            android:background="@null"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send_message_failed"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="attendance_state_menu">
+        <item>不修正</item>
+        <item>缺卡</item>
+        <item>旷工</item>
+    </string-array>
+    <string-array name="attendance_unit_menu">
+        <item>按天</item>
+        <item>按小时</item>
+    </string-array>
+    <string-array name="attendance_remind_after_menu">
+        <item>延后5分钟</item>
+        <item>延后10分钟</item>
+        <item>延后15分钟</item>
+        <item>延后20分钟</item>
+        <item>延后25分钟</item>
+        <item>延后30分钟</item>
+    </string-array>
+    <string-array name="attendance_location_range_menu">
+        <item>50米</item>
+        <item>100米</item>
+        <item>150米</item>
+        <item>200米</item>
+        <item>300米</item>
+        <item>500米</item>
+        <item>1000米</item>
+    </string-array>
+    <string-array name="attendance_remind_before_menu">
+        <item>提前5分钟</item>
+        <item>提前10分钟</item>
+        <item>提前15分钟</item>
+        <item>提前20分钟</item>
+        <item>提前25分钟</item>
+        <item>提前30分钟</item>
+    </string-array>
+    <string-array name="attendance_statistic_menu">
+        <item>所有考勤组都统计在一起</item>
+        <item>按考勤组分开统计</item>
+    </string-array>
+    <string-array name="attendance_rank_menu">
+        <item>前10</item>
+        <item>前15</item>
+        <item>前20</item>
+    </string-array>
+    <string-array name="attendance_late_range_menu">
+        <item>按迟到次数排序(次数相同按时长)</item>
+        <item>按迟到时长排序(时长相同按次数)</item>
+    </string-array>
+    <string-array name="attendance_work_time_menu">
+        <item>09:00</item>
+        <item>18:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>09:00</item>
+        <item>12:30</item>
+        <item>14:00</item>
+        <item>18:00</item>
+        <item>09:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>18:00</item>
+    </string-array>
+    <string-array name="attendance_week_day_list">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="attendance_rules_other_option_list">
+        <item>选择班次</item>
+        <item>选择办公地点</item>
+        <item>选择办公WiFi</item>
+    </string-array>
+    <string-array name="attendance_add_rules_hint_list">
+        <item>每天考勤时间一样，适用于:IT、金融、文化传媒、政府、事业单位、教育培训等行业。</item>
+        <item>自定义设置考勤时间，适用于：餐饮、制造、物流贸易、客户服务、医院等行业。</item>
+        <item>不设置班次，随时打卡，用于:班次没有规律，装修，家政，物流等计算工作时长的行业。</item>
+    </string-array>
+</resources>

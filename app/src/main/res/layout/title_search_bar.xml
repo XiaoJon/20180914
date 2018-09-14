@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/icon_select"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/iv_filtrate"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/icon_filtrate"
+        android:gravity="center"/>
+
+
+    <com.hjhq.teamface.basis.view.search.SearchEditText
+        android:id="@+id/et_search_in_searchbar"
+        style="@style/StyleEditText"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/iv_filtrate"
+        android:layout_toRightOf="@id/iv_select"
+        android:hint="搜索"/>
+
+    <ImageView
+        android:id="@+id/iv_clear_text"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignEnd="@id/et_search_in_searchbar"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/clear_button"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

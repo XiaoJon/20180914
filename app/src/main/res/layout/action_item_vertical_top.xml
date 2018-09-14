@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/main_popup_bg" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/iv_icon"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_marginLeft="10dip" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:text="Chart"
+            android:textColor="#efefef"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/select_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingRight="20dip"
+            android:src="@drawable/line_ball"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#646464"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
+
+</LinearLayout>

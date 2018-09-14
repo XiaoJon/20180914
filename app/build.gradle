@@ -1,0 +1,129 @@
+apply plugin: 'com.dd.comgradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'bugly'
+bugly {
+    appId = '782a1846bb'
+    appKey = '9c6e949d-fc94-4838-bd18-ac8b82361775'
+}
+
+android {
+
+    signingConfigs {
+        config {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE)
+            storePassword STORE_PASSWORD
+        }
+        debug {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE)
+            storePassword STORE_PASSWORD
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE)
+            storePassword STORE_PASSWORD
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+//        applicationId "com.hjhq.teamface"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+        multiDexEnabled true//分包配置
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "app"]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            //混淆
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+
+    }
+    productFlavors {
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':common-ui')
+    compile project(':im')
+    compile project(':componentservice')
+    compile project(':download')
+    //分包配置
+    compile 'com.android.support:multidex:1.0.1'
+    //毛玻璃
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //viewpager指示器
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //PhotoView  图片展示
+    compile 'com.commit451:PhotoView:1.2.4'
+    //工作台有用到
+    compile 'com.youth.banner:banner:1.4.9'
+    //头像裁剪
+    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    //组件化路由
+    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile project(':lib-zxing')
+
+}
+
+combuild {
+    applicationName = 'com.hjhq.teamface.MyApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
+}

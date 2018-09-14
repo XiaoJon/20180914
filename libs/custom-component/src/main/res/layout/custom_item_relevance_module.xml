@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp">
+
+    <TextView
+        android:id="@+id/tv_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="6"
+        android:textColor="#505a6a"
+        android:textSize="14sp"
+        tools:text="销售合同" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/hole_avatar_bg1"
+                android:gravity="center"
+                android:textColor="@color/transparent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="1dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/main_green"
+        android:textSize="14sp"
+        tools:text="名"/>
+</RelativeLayout>

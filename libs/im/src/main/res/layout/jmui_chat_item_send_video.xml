@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/jmui_chat_item_send_layout">
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_sender_avatar_iv"
+            style="@style/jmui_chat_item_sender_avatar_style"/>
+
+        <RelativeLayout
+            android:id="@+id/jmui_msg_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/jmui_sender_avatar_iv">
+
+            <ImageView
+                android:id="@+id/jmui_send_video_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/jmui_fetch_failed"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/jmui_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/jmui_msg_fl"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/jmui_msg_fl"
+            android:text="13%"
+            android:textColor="@color/main_green"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_send_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/jmui_msg_fl"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/jmui_msg_fl"
+            android:textColor="@color/gray_bb"
+            android:textSize="12sp"
+            tools:text="发送中"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

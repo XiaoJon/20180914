@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_custom_detail"
+    android:background="@drawable/jmui_send_msg"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="11dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_icon_type"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_common" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="180dp"
+            android:textColor="@color/black_4a"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_creater_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#A9A9A9"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_creater_name"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#A9A9A9"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

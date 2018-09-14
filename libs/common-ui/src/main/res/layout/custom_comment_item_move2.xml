@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/iamge_item_rl_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/item_move2_iv_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/default_head_icon" />
+
+        <TextView
+            android:id="@+id/item_move2_tv_name"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_move2_iv_icon2"
+            tools:text="牟雪飞" />
+
+        <TextView
+            android:id="@+id/item_move2_tv_time2"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_move2_tv_name"
+            tools:text="3月8号 12:45" />
+
+        <ImageView
+            android:id="@+id/item_move2_customImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/item_move2_tv_name"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/item_move2_iv_icon2"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

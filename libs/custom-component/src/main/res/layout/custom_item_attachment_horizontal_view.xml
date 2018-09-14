@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        style="@style/custom_horizontal_layout_style">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/custom_multi_text_horizontal_title_style"
+            android:layout_marginTop="11dp"
+            tools:text="  附件" />
+
+        <LinearLayout
+            style="@style/custom_vertical_layout_style"
+            android:layout_marginEnd="8dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyler_upload_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_add" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+</LinearLayout>

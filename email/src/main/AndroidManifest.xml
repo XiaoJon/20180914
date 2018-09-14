@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.email">
+
+    <application
+        android:name=".application.EmailApplication"
+        tools:replace="android:label"
+        android:allowBackup="false"
+        android:label="@string/email_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme">
+        <activity android:name="com.hjhq.teamface.email.EmailTestActivity"/>
+        <!--邮件主界面-->
+        <activity android:name=".presenter.EmailActivity3"/>
+        <!--邮件详情-->
+        <activity android:name=".presenter.EmailDetailActivity"/>
+        <!--新建邮件-->
+        <activity android:name=".presenter.NewEmailActivity"/>
+        <!--选择审批人-->
+        <activity android:name=".presenter.ChooseApprovalActivity"/>
+        <!--邮件选择联系人-->
+        <activity android:name=".presenter.ChooseEmailContactsActivity"/>
+        <!--邮件通讯录-->
+        <activity android:name=".presenter.EmailContactsActivity"/>
+        <!--从模块中选择联系人-->
+        <activity android:name=".presenter.ChooseModuleContactActivity"/>
+        <!--选择发送邮件账户-->
+        <activity android:name=".presenter.ChooseEmailAccountActivity"/>
+
+
+    </application>
+
+</manifest>

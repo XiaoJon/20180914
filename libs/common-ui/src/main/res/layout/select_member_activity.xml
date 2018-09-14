@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/fl_company_organization"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_selecter"
+        android:layout_below="@+id/m_magic_indicator"
+        android:visibility="gone"
+        tools:visibility="visible">
+        <!--
+                <fragment
+                    android:id="@+id/fragment_company_organization"
+                    android:name="com.hjhq.teamface.custom.ui.member.CompanyOrganizationFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />-->
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/m_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_selecter"
+        android:layout_below="@+id/m_magic_indicator" />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/m_magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_selecter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#F7F7F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_check_all_member"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/cb_member_selector_bg" />
+
+        <TextView
+            android:id="@+id/tv_all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="@color/black_17"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:gravity="right"
+            android:textColor="@color/main_green"
+            android:textSize="@dimen/text_size_14"
+            tools:text="已选择：999" />
+    </LinearLayout>
+</RelativeLayout>

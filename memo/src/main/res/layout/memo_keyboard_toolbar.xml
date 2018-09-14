@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#FEFEFE"
+    android:focusable="false"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    tools:context="com.hjhq.teamface.memo.ui.AddMemoActivity"
+    tools:showIn="@layout/memo_activity_add">
+
+    <ImageView
+        android:id="@+id/action1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_check_false"/>
+
+    <ImageView
+        android:id="@+id/action2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_num_false"/>
+
+    <ImageView
+        android:id="@+id/action3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_picture"/>
+
+    <ImageView
+        android:id="@+id/action4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_link"/>
+
+    <ImageView
+        android:id="@+id/action5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_remind"/>
+
+    <ImageView
+        android:id="@+id/action6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_shared_member"/>
+
+    <ImageView
+        android:id="@+id/action7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_add_location"/>
+
+    <ImageView
+        android:id="@+id/action8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/memo_hide_keyboard"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

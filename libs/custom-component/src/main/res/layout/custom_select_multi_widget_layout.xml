@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    style="@style/custom_widget_layout_style">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/custom_input_title_style"
+        Tools:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题" />
+
+    <LinearLayout
+        android:id="@+id/ll_content1"
+        style="@style/custom_widget_content_layout_style">
+
+        <TextView
+            android:id="@+id/tv_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="@string/please_select_hint" />
+
+        <com.hjhq.teamface.common.view.FlowLayout
+            android:id="@+id/pick_flow_layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/custom_content_start_end_padding"
+            android:paddingStart="@dimen/custom_content_start_end_padding" />
+
+        <ImageView
+            android:id="@+id/iv_right1"
+            style="@style/custom_widget_icon_style"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_to_next"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content2"
+        style="@style/custom_widget_content_layout_style">
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="@string/please_select_hint" />
+
+        <com.hjhq.teamface.common.view.FlowLayout
+            android:id="@+id/pick_flow_layout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/custom_content_start_end_padding"
+            android:paddingStart="@dimen/custom_content_start_end_padding" />
+
+        <ImageView
+            android:id="@+id/iv_right2"
+            style="@style/custom_widget_icon_style"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_to_next"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content3"
+        style="@style/custom_widget_content_layout_style"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="@string/please_select_hint" />
+
+        <com.hjhq.teamface.common.view.FlowLayout
+            android:id="@+id/pick_flow_layout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/custom_content_start_end_padding"
+            android:paddingStart="@dimen/custom_content_start_end_padding" />
+
+        <ImageView
+            android:id="@+id/iv_right3"
+            style="@style/custom_widget_icon_style"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_to_next"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

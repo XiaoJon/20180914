@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.memo">
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.hjhq.teamface.memo.application.MemoApplication"
+        android:allowBackup="false"
+        android:label="@string/memo_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="android:label">
+
+        <activity android:name="com.hjhq.teamface.memo.MemoTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!--备忘录主界面-->
+        <activity android:name="com.hjhq.teamface.memo.ui.MemoListActivity"/>
+        <!--新增备忘录-->
+        <activity android:name="com.hjhq.teamface.memo.ui.AddMemoActivity"/>
+        <!--选择提醒时间和模式-->
+        <activity android:name=".ui.MemoRemindTimeAndModeActivity"/>
+        <!--详情-->
+        <activity android:name=".ui.MemoDetailActivity"/>
+        <!--选择关联-->
+        <activity android:name=".ui.ChooseRelevanceActivity"/>
+        <!--搜索备忘录-->
+        <activity android:name=".ui.SearchMemoActivity"/>
+        <!--搜索自定义数据-->
+        <activity android:name=".ui.SearchModuleDataActivity"/>
+        <!--选择备忘录-->
+        <activity android:name=".ui.ChooseMemoActivity"/>
+        <activity android:name=".ui.ChooseProjectTaskActivity"/>
+    </application>
+
+</manifest>

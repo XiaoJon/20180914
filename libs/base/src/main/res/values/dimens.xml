@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- *****************全局大小****************** -->
+    <dimen name="title_bar_left_txt_size">16dp</dimen>
+    <dimen name="title_indicator_normal_txt_size">16dp</dimen>
+    <dimen name="title_indicator_selected_txt_size">20dp</dimen>
+
+    <dimen name="default_btn_radius">5dp</dimen>
+    <dimen name="view_left_right_padding">28dp</dimen>
+
+    <!--底部弹出菜单-->
+    <dimen name="bottom_menu_text_size">16dp</dimen><!--底部菜单选项文字大小-->
+    <dimen name="bottom_menu_title_size">14dp</dimen><!--底部菜单标题文字大小-->
+    <dimen name="bottom_menu_title_height">46dp</dimen><!--底部菜单条目高度-->
+    <!--单一过滤菜单-->
+    <dimen name="filter_menu_text_size">14dp</dimen><!--单一过滤菜单选项文字大小-->
+    <dimen name="filter_menu_item_height">46dp</dimen><!--单一过滤菜单条目高度-->
+    <!--ChatInput-->
+    <dimen name="voice_input_hint_text_size">14dp</dimen><!--语音输入提示文字大小-->
+
+    <!--搜索框-->
+    <dimen name="search_page_edittext_height">46dp</dimen><!--搜索页搜索栏高度-->
+    <dimen name="search_bar_hint_text_size">14dp</dimen><!--搜索栏提示文字大小-->
+    <dimen name="search_bar_height">46dp</dimen><!--搜索栏高度-->
+    <!--条目-->
+    <dimen name="item_name_text_size">14dp</dimen><!--条目名字字体大小-->
+    <dimen name="item_input_text_size">14dp</dimen><!--条目输入文字大小-->
+    <dimen name="item_input_hint_text_size">14dp</dimen><!--待定 条目输入文字大小-->
+    <dimen name="item_input_text_layout_height">55dp</dimen><!--条目输入文字高度-->
+    <dimen name="item_switch_btn_height">31dp</dimen><!--切换按钮高度-->
+    <dimen name="item_switch_btn_width">51dp</dimen><!--切换按钮宽度-->
+    <dimen name="item_switch_btn_margin_right">51dp</dimen><!--切换按钮右边距-->
+    <dimen name="item_switch_btn_layout_height">55dp</dimen><!--条目切换按钮高度-->
+    <dimen name="mine_item_height">50dp</dimen>
+
+    <dimen name="title_bar_txt_size">18dp</dimen>
+    <dimen name="title_bar_right_txt_size">14dp</dimen>
+
+    <dimen name="default_line_height">0.5dp</dimen><!-- 默认分割线高度 -->
+    <dimen name="title_bar_height">45dp</dimen><!-- 头部控件高度 -->
+    <dimen name="bottom_menu_item_height">46dp</dimen><!--底部菜单条目高度-->
+    <dimen name="search_page_hint_text_size">12sp</dimen><!--搜索页提示文字大小-->
+    <dimen name="search_page_bar_height">46dp</dimen><!--搜索页搜索栏高度-->
+    <dimen name="item_name_margin_left">15dp</dimen><!--条目名字左边距-->
+    <dimen name="item_name_margin_right">15dp</dimen><!--条目名字右边距-->
+
+    <dimen name="item_default_height">44dip</dimen>
+    <!-- *****************全局大小****************** -->
+
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_17">17dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+
+
+    <!-- 文字的大小 -->
+    <dimen name="text_minimum_size">10sp</dimen>
+    <dimen name="text_default_size">12sp</dimen>
+    <dimen name="text_small_size">14sp</dimen>
+    <dimen name="text_medium_size">18sp</dimen>
+    <dimen name="text_large_size">22sp</dimen>
+    <dimen name="default_padding_top">5dp</dimen>
+    <dimen name="default_padding_bottom">5dp</dimen>
+    <dimen name="default_padding_right">15dp</dimen>
+    <dimen name="default_padding_left">15dp</dimen>
+    <dimen name="contact_item_padding_left">5dp</dimen>
+    <dimen name="item_head_icon_size">40dp</dimen>
+    <dimen name="chat_head_icon_size">40dp</dimen>
+    <dimen name="save_btn_height">30dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="me_head_icon_size">75dp</dimen>
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">5dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">0dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="default_border_width">0dp</dimen>
+
+
+    <dimen name="margin_border_size">15dp</dimen>
+    <!-- layout_content.xml -->
+    <dimen name="main_content_title_height">44dip</dimen>
+    <dimen name="main_content_title_paddingRight">15dip</dimen>
+    <dimen name="main_content_title_paddingLeft">15dip</dimen>
+    <dimen name="main_content_userInfo_width">24dip</dimen>
+    <dimen name="main_content_menu_width">23dip</dimen>
+    <dimen name="main_content_menu_height">23dip</dimen>
+    <!--分割线宽或高-->
+    <dimen name="lines_width_or_height">1px</dimen>
+
+    <!--################################企信###############################-->
+    <!--位数消息数量字体大小-->
+    <dimen name="unread_msg_num_size">12sp</dimen>
+</resources>

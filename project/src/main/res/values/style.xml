@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="project_filter_itme">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/_323232</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="project_ActionBarIv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="project_ActionBarTv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray_99</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <!-- 任务详情 -->
+    <style name="project_task_item_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingStart">15dp</item>
+    </style>
+
+    <style name="project_task_item_left_iv">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:paddingEnd">7dp</item>
+    </style>
+
+    <style name="project_task_item_left_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_69</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="project_task_item_right_iv">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+
+
+    <!-- 自定义 --><!-- 自定义左右 布局 样式 -->
+    <style name="project_custom_horizontal_layout_style">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 自定义输入 左右结构的title 样式 -->
+    <style name="project_custom_input_horizontal_title_style">
+        <item name="android:layout_width">103dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/custom_title_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 自定义输入左右结构 输入框 样式 -->
+    <style name="project_custom_input_horizontal_content_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/custom_content_color</item>
+        <item name="android:textColorHint">@color/custom_hint_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 选择组件左右结构 内容 样式 -->
+    <style name="project_custom_select_horizontal_content_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/custom_content_color</item>
+        <item name="android:textColorHint">@color/custom_hint_color</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- 多文本控件左右结构 nodeList 样式 -->
+    <style name="project_custom_multi_text_horizontal_title_style">
+        <item name="android:layout_width">103dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/custom_title_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- 多文本控件左右结构 输入框 样式 -->
+    <style name="project_custom_multi_text_horizontal_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">126dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/custom_content_color</item>
+        <item name="android:textColorHint">@color/custom_hint_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxEms">200</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:minLines">6</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+
+    <!-- 自定义上下 布局 样式 -->
+    <style name="project_custom_vertical_layout_style">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 自定义输入 上下结构的title 样式 -->
+    <style name="project_custom_input_vertical_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:textColor">@color/custom_title_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 自定义输入上下结构 输入框 样式 -->
+    <style name="project_custom_input_vertical_content_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/custom_content_color</item>
+        <item name="android:textColorHint">@color/custom_hint_color</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 选择组件上下结构 内容 样式 -->
+    <style name="project_custom_select_vertical_content_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/custom_content_color</item>
+        <item name="android:textColorHint">@color/custom_hint_color</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 自定义多文本控件 nodeList 样式 -->
+    <style name="project_custom_multi_text_vertical_title_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/custom_title_color</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <!-- 自定义多文本控件 输入框 样式 -->
+    <style name="project_custom_multi_text_vertical_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">105dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/custom_content_color</item>
+        <item name="android:textColorHint">@color/custom_hint_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxEms">200</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:minLines">5</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+</resources>

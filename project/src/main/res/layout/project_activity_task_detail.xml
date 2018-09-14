@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 头部导航 -->
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/project_icon_task_navi" />
+
+            <TextView
+                android:id="@+id/tv_project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#797979"
+                android:textSize="14sp"
+                tools:text="张小" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/icon_to_next" />
+
+            <TextView
+                android:id="@+id/tv_node_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#797979"
+                android:textSize="14sp"
+                tools:text="张小发法师" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/icon_to_next" />
+
+            <TextView
+                android:id="@+id/tv_sub_node_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#797979"
+                android:textSize="14sp"
+                tools:text="张小发大水发发送到法师" />
+
+
+            <ImageView
+                android:id="@+id/iv_sub_temp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/icon_to_next" />
+
+            <TextView
+                android:id="@+id/tv_sub_temp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#797979"
+                android:textSize="14sp"
+                tools:text="张小发大水发发送到法师" />
+        </LinearLayout>
+
+        <!-- 任务名 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_task_status"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/project_task_item_check" />
+
+                <TextView
+                    android:id="@+id/tv_task_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/_323232"
+                    android:textSize="@dimen/text_size_16"
+                    tools:text="这是任务名称这是任务名称这" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_check_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                tools:src="@drawable/project_icon_check_wait" />
+        </RelativeLayout>
+        <!-- 内容 -->
+        <LinearLayout
+            android:id="@+id/ll_task_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" />
+
+
+        <!-- 协作人 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_associates_control"
+                style="@style/project_task_item_ll">
+
+                <ImageView
+                    style="@style/project_task_item_left_iv"
+                    android:src="@drawable/project_icon_associates" />
+
+
+                <TextView
+                    style="@style/project_task_item_left_tv"
+                    android:text="@string/project_associates" />
+
+                <ImageView
+                    android:id="@+id/iv_associates_spread"
+                    style="@style/project_task_item_right_iv"
+                    android:src="@drawable/arrows_flex_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_associates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/line_margin" />
+
+                <LinearLayout
+                    android:id="@+id/ll_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/project_associates"
+                        android:textColor="#212121"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <com.hjhq.teamface.basis.view.member.MembersView
+                        android:id="@+id/member_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/project_look_associates"
+                        android:textColor="#212121"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sbtn_associates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:enabled="false"
+                        app:kswAnimationDuration="300"
+                        app:kswBackDrawable="@drawable/ios_back_drawable"
+                        app:kswBackMeasureRatio="1.4"
+                        app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                        app:kswThumbMarginBottom="-8dp"
+                        app:kswThumbMarginLeft="-5dp"
+                        app:kswThumbMarginRight="-5dp"
+                        app:kswThumbMarginTop="-2.5dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 子任务 -->
+        <LinearLayout
+            android:id="@+id/ll_sub_task_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sub_task_control"
+                style="@style/project_task_item_ll">
+
+                <ImageView
+                    style="@style/project_task_item_left_iv"
+                    android:src="@drawable/project_icon_sub_task" />
+
+                <TextView
+                    style="@style/project_task_item_left_tv"
+                    android:text="@string/project_sub_task" />
+
+                <ImageView
+                    android:id="@+id/iv_sub_task"
+                    style="@style/project_task_item_right_iv"
+                    android:src="@drawable/arrows_flex_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sub_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <include layout="@layout/line_margin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/sub_task_recyler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="43dp"
+                        android:orientation="vertical" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_sub_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_add_sub_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:text="@string/project_add_sub_task"
+                        android:textColor="@color/gray_a9"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 关联 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_relevance_control"
+                style="@style/project_task_item_ll">
+
+                <ImageView
+                    style="@style/project_task_item_left_iv"
+                    android:src="@drawable/project_icon_relevance" />
+
+                <TextView
+                    style="@style/project_task_item_left_tv"
+                    android:text="@string/project_relevance" />
+
+                <ImageView
+                    android:id="@+id/iv_relevance"
+                    style="@style/project_task_item_right_iv"
+                    android:src="@drawable/arrows_flex_selector" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_relevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/line_margin" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/relevance_recyler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="35dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_add_relevance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/project_add_relevance"
+                        android:textColor="@color/gray_a9"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 被关联 -->
+        <LinearLayout
+            android:id="@+id/ll_be_relevance_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_be_relevance_control"
+                style="@style/project_task_item_ll">
+
+                <ImageView
+                    style="@style/project_task_item_left_iv"
+                    android:src="@drawable/project_icon_relevance" />
+
+                <TextView
+                    style="@style/project_task_item_left_tv"
+                    android:text="@string/project_be_relevance" />
+
+                <ImageView
+                    android:id="@+id/iv_be_relevance"
+                    style="@style/project_task_item_right_iv"
+                    android:src="@drawable/arrows_flex_selector" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_be_relevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/line_margin" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/be_relevance_recyler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="35dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 点赞 -->
+
+        <LinearLayout
+            style="@style/project_task_item_ll"
+            android:layout_marginTop="12dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                style="@style/project_task_item_left_iv"
+                android:src="@drawable/project_like_selector" />
+
+            <TextView
+                android:id="@+id/tv_like"
+                style="@style/project_task_item_left_tv"
+                android:text="@string/project_like" />
+
+            <TextView
+                android:id="@+id/tv_like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0个赞"
+                android:textColor="@color/gray_69"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                style="@style/project_task_item_right_iv"
+                android:src="@drawable/arrows_flex_selector" />
+        </LinearLayout>
+
+
+        <!-- 校验 -->
+        <RelativeLayout
+            android:id="@+id/ll_check"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/project_task_check"
+                android:textColor="@color/_323232"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <!-- 尾部操作按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/comment"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:background="@color/gray_f2" />
+
+
+            <TextView
+                android:id="@+id/tv_dynamic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/dynamic"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:background="@color/gray_f2" />
+
+
+            <TextView
+                android:id="@+id/tv_look_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/project_look_status"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

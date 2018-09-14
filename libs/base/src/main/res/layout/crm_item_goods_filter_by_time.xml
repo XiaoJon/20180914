@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/default_app_backgroud_color"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_time"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/item_bg_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/crm_filter_item_title"
+            tools:text="创建时间"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_sort_down"
+            android:scaleType="center"/>
+    </RelativeLayout>
+
+    <View style="@style/default_lint_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_action_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_goods_update_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3DB8C1">
+
+            <LinearLayout
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/today"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="今天"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/yesterday"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="昨天"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/last_seven_day"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="过去7天"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/last_thirty_day"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="过去30天"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/this_month"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="本月"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/last_month"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="上月"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/this_season"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="本季度"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/last_season"
+                    style="@style/crm_filter_item_radio_button"
+                    android:background="@color/transparent"
+                    android:button="@null"
+
+                    android:drawableRight="@drawable/crm_cb_in_filter_selector"
+                    android:soundEffectsEnabled="false"
+                    android:text="上季度"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/ll_input_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#3DB8C1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="开始时间"
+                android:textColor="@color/white"
+                android:textColorHint="#fff"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_start_time_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="年-月-日"
+                android:textColor="@color/white"
+                android:textColorHint="#fff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/ll_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#3DB8C1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="结束时间"
+                android:textColor="@color/white"
+                android:textColorHint="#fff"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_end_time_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="年-月-日"
+
+                android:textColor="@color/white"
+                android:textColorHint="#fff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

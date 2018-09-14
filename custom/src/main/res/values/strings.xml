@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="custom_app_name">Custom</string>
+
+    <string name="custom_approval">审批</string>
+    <string name="custom_comment">评论</string>
+    <string name="custom_dynamic">动态</string>
+</resources>

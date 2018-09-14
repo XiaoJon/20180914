@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/custom_title_color"
+        android:textSize="12sp"
+        tools:text="条形码"/>
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_title"
+        android:gravity="top"
+        android:text="*"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_widget_border_bg">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_get"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:src="@drawable/get_barcode_icon"/>
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:src="@drawable/scan_barcode_icon"/>
+
+            <ImageView
+                android:id="@+id/iv_show"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:src="@drawable/view_barcode_icon"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ll"
+            android:background="@null"
+            android:hint="请输入"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingStart="5dp"
+            android:textColor="@color/custom_content_color"
+            android:textColorHint="@color/custom_hint_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ll"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/custom_content_color"
+            android:textSize="14sp"
+            tools:text="6363575754745745"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

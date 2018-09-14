@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hjhq.teamface.memo">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".MemoTestActivity">
+        </activity>
+        <activity android:name=".ui.MemoListActivity"/>
+        <!--新增备忘录-->
+        <activity android:name=".ui.AddMemoActivity"/>
+        <!--备忘录详情-->
+        <activity android:name=".ui.MemoDetailActivity"/>
+        <!--选择时间-->
+        <!--选择提醒时间和模式-->
+        <activity android:name=".ui.MemoRemindTimeAndModeActivity"/>
+        <!--选择关联-->
+        <activity android:name=".ui.ChooseRelevanceActivity"/>
+        <!--搜索备忘录-->
+        <activity android:name=".ui.SearchMemoActivity"/>
+        <!--搜索自定义数据-->
+        <activity android:name=".ui.SearchModuleDataActivity"/>
+        <!--选择备忘录-->
+        <activity android:name=".ui.ChooseMemoActivity"/>
+    </application>
+
+</manifest>

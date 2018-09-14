@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_organization"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+    <ImageView
+        android:id="@+id/iv_organization"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/email_contact_icon"/>
+
+    <TextView
+        android:id="@+id/tv_organization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_organization"
+        android:text="从通讯录中选择"
+        android:textColor="@color/black_17"
+        android:textSize="@dimen/text_size_16"/>
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="8dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_next"/>
+</RelativeLayout>

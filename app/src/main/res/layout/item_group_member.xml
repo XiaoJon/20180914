@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp">
+
+    <RelativeLayout
+        android:id="@+id/header_choose_act_createGroup"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv_member_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="小帅"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_member_head"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:id="@+id/tv_member_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_member_head"
+            android:textColor="@color/gray_bb"
+            android:text="产品"
+            android:textSize="@dimen/text_size_14" />
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/finish" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+</LinearLayout>

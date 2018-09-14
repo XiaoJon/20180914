@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/project_custom_vertical_layout_style">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/project_custom_multi_text_vertical_title_style"
+            tools:text="标题" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.hjhq.teamface.common.view.TextWebView
+                android:id="@+id/text_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="126dp" />
+            <FrameLayout
+                android:id="@+id/fl_edit"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View style="@style/margin_left_lint_style" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.custom">
+
+    <application
+        android:name=".application.CustomApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/custom_app_name"
+        android:supportsRtl="true"
+        tools:replace="android:label,android:icon,android:name">
+
+
+        <activity android:name=".ui.template.AutoModuleActivity"/>
+        <!-- 数据模板列表 -->
+        <activity android:name=".ui.template.DataTempActivity"/>
+        <!-- 选择自定义数据模板列表 -->
+        <activity android:name=".ui.select.SelectDataTempActivity"/>
+        <!-- 搜索自定义数据模板列表 -->
+        <activity android:name=".ui.select.SearchDataTempActivity"/>
+        <!-- 数据详情 -->
+        <activity
+            android:name=".ui.detail.DataDetailActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 数据搜索界面 -->
+        <activity android:name=".ui.template.SearchActivity"/>
+        <!-- 数据查重 -->
+        <activity android:name=".ui.template.RepeatCheckActivity"/>
+        <!-- 文件 -->
+        <activity android:name=".ui.file.FileDetailActivity"/>
+        <!-- 新增 -->
+        <activity
+            android:name=".ui.add.AddCustomActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".ui.template.ReferenceTempActivity"/>
+        <!-- 修改 -->
+        <activity android:name=".ui.add.EditCustomActivity"/>
+        <!-- 选择时间 -->
+        <activity
+            android:name="com.hjhq.teamface.common.ui.time.DateTimeSelectPresenter"
+            android:theme="@style/transparentTheme"/>
+        <!-- 转移负责人 -->
+        <activity android:name=".ui.funcation.TransferPrincipalPresenter"/>
+        <!-- 共享数据 -->
+        <activity android:name=".ui.funcation.SharePresenter"/>
+        <activity android:name=".ui.funcation.AddOrEditSharePresenter"/>
+        <!-- 关联模块列表 -->
+        <activity android:name=".ui.template.RelevanceTempActivity"/>
+        <!-- 选择 -->
+        <activity android:name="com.hjhq.teamface.customcomponent.select.SelectPresenter"/>
+        <!-- 公海池选择 -->
+        <activity android:name=".ui.detail.SeasPoolActivity"/>
+        <!-- 选择员工 -->
+        <activity android:name="com.hjhq.teamface.common.ui.member.SelectEmployeeActivity"/>
+        <!-- 共享 -->
+        <activity android:name=".ui.add.AddShareActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+/*greendao {
+    schemaVersion 28
+    daoPackage 'com.hjhq.teamface.gen'
+    targetGenDir 'src/main/java'
+}*/
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':base')
+    //数据库
+    //compile 'org.greenrobot:greendao:3.2.0'
+    //compile 'org.greenrobot:greendao-generator:3.2.0'
+    //数据库加密
+    //compile 'net.zetetic:android-database-sqlcipher:3.5.1'
+    //compile 'org.greenrobot:greendao-generator-encryption:3.0.0beta3'
+    //compile 'com.google.code.gson:gson:2.6.2'
+    compile project(':download')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile project(':common-ui')
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_temp_01_bg"
+    android:orientation="vertical"
+    android:paddingEnd="60dp"
+    android:paddingStart="90dp"
+    android:paddingTop="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18"
+            tools:text="黄小花" />
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_12"
+            tools:text="部门主管" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12"
+        tools:text="huangxiaohua@163.com" />
+
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/user_card_company_icon"
+        android:textColor="@color/black_4a"
+        android:textSize="@dimen/text_size_14"
+        tools:text="公司名称" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/user_card_address_icon"
+        android:textColor="@color/black_4a"
+        android:textSize="@dimen/text_size_14"
+        tools:text="深圳市高新园中科大厦102" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/user_card_phone_icon"
+        android:textColor="@color/black_4a"
+        android:textSize="@dimen/text_size_14"
+        tools:text="13528885186" />
+
+    <TextView
+        android:id="@+id/tv_fixed_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/user_card_fixed_phone_icon"
+        android:textColor="@color/black_4a"
+        android:textSize="@dimen/text_size_14"
+        tools:text="0755-5321510" />
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login页面 -->
+    <dimen name="login_email_txt_size">18sp</dimen>
+    <dimen name="login_magin">30dp</dimen>
+    <dimen name="login_regist_head_icon_size">80dp</dimen>
+    <dimen name="login_add_friend_txt_size">18sp</dimen>
+    <dimen name="login_msg_del_offset">70dp</dimen>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="conplain_and_suggest_bottom_item">
+        <item>全部意见</item>
+        <item>待我受理</item>
+        <item>已受理</item>
+        <item>抄送到我</item>
+    </string-array>
+    <!--商品添加服务-->
+
+    <!--客户操作按钮-->
+    <!--公海池操作按钮-->
+    <array name="public_pond_menu">
+        <item>领取</item>
+        <item>分配</item>
+        <item>删除</item>
+    </array>
+    <!--市场活动操作按钮-->
+    <!--报价操作按钮-->
+    <!--订单操作按钮-->
+    <!--合同操作按钮-->
+    <!--回款操作按钮-->
+    <!--发票操作按钮-->
+    <string-array name="role_list">
+        <item>所有者</item>
+        <item>管理者</item>
+        <item>成员</item>
+        <item>访问者</item>
+    </string-array>
+    <string-array name="helper_title_name">
+        <item>未读</item>
+        <item>已读</item>
+        <item>待处理</item>
+    </string-array>
+
+    <string-array name="schedule_time">
+        <item>按日</item>
+        <item>按月</item>
+    </string-array>
+    <string-array name="company_member_manage">
+        <item>添加成员</item>
+        <item>二维码邀请</item>
+        <item>部门管理</item>
+        <item>成员管理</item>
+    </string-array>
+
+
+    <string-array name="approve_buttom_name">
+        <item>我发起的</item>
+        <item>待我审批</item>
+        <item>我已审批</item>
+        <item>抄送到我</item>
+    </string-array>
+    <string-array name="approve_more">
+        <item>全部</item>
+        <item>待审批</item>
+        <item>已通过</item>
+        <item>已撤销</item>
+        <item>已驳回</item>
+    </string-array>
+
+
+    <!--邮件主界面侧滑菜单-->
+    <string-array name="email_menu_array">
+        <item>收件箱</item>
+        <item>未读</item>
+        <item>已发送</item>
+        <item>草稿箱</item>
+        <item>已删除</item>
+        <item>垃圾箱</item>
+        <item>返回首页</item>
+    </string-array>
+</resources>

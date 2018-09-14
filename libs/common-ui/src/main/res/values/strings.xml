@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="common_ui_app_name">TeamFace</string>
+    <string name="select_member">选择成员</string>
+
+
+    <string name="project_over_task">超期任务</string>
+    <string name="project_today_task">今日要做</string>
+    <string name="project_tomorrow_task">明日要做</string>
+    <string name="project_later_task">以后要做</string>
+    <string name="im_welcome_notification1">欢迎 %s 加入本群!</string>
+    <string name="im_welcome_notification2">欢迎加入本群!</string>
+    <string name="im_choose_a_group">选择一个群</string>
+    <string name="rename">重命名</string>
+    <string name="delete">删除</string>
+    <string name="pin_top">置顶</string>
+    <string name="department_member_num">(%s)</string>
+    <!--文件夹颜色-->
+    <string name="_FF1D32">#FF1D32</string>
+    <string name="_FF7777">#FF7777</string>
+    <string name="_DD361A">#DD361A</string>
+    <string name="_DB6A20">#DB6A20</string>
+    <string name="_F57221">#FABC01</string>
+    <string name="_FFEB57">#FFEB57</string>
+    <string name="_F9B239">#F9B239</string>
+    <string name="_00781B">#00781B</string>
+    <string name="_B4E550">#B4E550</string>
+    <string name="_73B32D">#73B32D</string>
+    <string name="_119E29">#119E29</string>
+    <string name="_00CFC9">#00CFC9</string>
+    <string name="_51D0B1">#51D0B1</string>
+    <string name="_5CC1FC">#5CC1FC</string>
+    <string name="_0091FA">#0091FA</string>
+    <string name="_3057E5">#3057E5</string>
+    <string name="_0051AF">#0051AF</string>
+    <string name="_FF85BE">#FF85BE</string>
+    <string name="_F52E94">#F52E94</string>
+    <string name="_9856D9">#9856D9</string>
+    <string name="_5821A7">#5821A7</string>
+    <string name="_C0C0C0">#C0C0C0</string>
+    <string name="_8C8C8C">#8C8C8C</string>
+    <string name="_000000">#000000</string>
+</resources>

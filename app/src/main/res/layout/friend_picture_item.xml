@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 2015-10-13 与李林子商量：超过缩略图的选取中间显示，不超过的显示原图 -->
+
+<com.hjhq.teamface.view.recycler.MyGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grisView_imageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:horizontalSpacing="4dip"
+    android:listSelector="@android:color/transparent"
+    android:numColumns="3"
+    android:spacing="1dip"
+    android:src="@drawable/ic_launcher"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="4dip" />

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_app_backgroud_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="60dp">
+
+                <TextView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/star"
+                    android:text="@string/attendance_work_schedule_nane_title"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_name"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attendance_work_schedule_nane_title_hint"
+                    android:maxLength="6"
+                    android:maxLines="3"
+                    android:padding="10dp"
+                    android:textSize="16dp"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_app_backgroud_color"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_must2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tv_must2"
+                    android:text="上下班次数 "
+                    android:textColor="#333333"
+                    android:textSize="14dp"/>
+
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@drawable/attendance_radio1_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="1天1次上下班"
+                    android:textColor="@drawable/attendance_radio_text_color_selector"/>
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@drawable/attendance_radio2_selector"
+                    android:button="@null"
+                    android:text="1天2次上下班"
+                    android:textColor="@drawable/attendance_radio_text_color_selector"/>
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@drawable/attendance_radio3_selector"
+
+                    android:button="@null"
+                    android:text="1天3次上下班"
+                    android:textColor="@drawable/attendance_radio_text_color_selector"/>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/default_app_backgroud_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_can"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/type1"
+                    layout="@layout/attendance_one_day_one"/>
+
+                <include
+                    android:id="@+id/type2"
+                    layout="@layout/attendance_one_day_two"
+                    android:visibility="gone"/>
+
+                <include
+                    android:id="@+id/type3"
+                    layout="@layout/attendance_one_day_three"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_app_backgroud_color"/>
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lines="1"
+                android:paddingRight="15dp"
+                android:text="合计工作时长9小时0分钟"
+                android:textColor="#666666"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

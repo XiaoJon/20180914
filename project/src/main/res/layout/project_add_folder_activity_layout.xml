@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="60dp">
+
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/star"
+            android:text="@string/project_folder_name_in_add"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tv_name"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:maxLength="25"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:textSize="16dp"
+            tools:text="发发呆文件夹名称25个字文件夹名称25个字以内文件夹文件夹名称25个字以内名称25个字以内文件夹名称25个字以内以内文件夹名称25个字以内"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

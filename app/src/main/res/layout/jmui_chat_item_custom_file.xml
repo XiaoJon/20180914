@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_custom_file"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:background="@drawable/jmui_send_msg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_file_type"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_default" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:textColor="#A9A9A9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_creater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#A9A9A9"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_creater"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#A9A9A9"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

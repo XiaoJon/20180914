@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <industry
+        id="1"
+        value="互联网/电子商务" />
+
+    <industry
+        id="2"
+        value="计算机软件" />
+
+    <industry
+        id="3"
+        value="计算机硬件" />
+
+    <industry
+        id="4"
+        value="IT服务/系统集成" />
+
+    <industry
+        id="5"
+        value="通信/电信" />
+
+    <industry
+        id="6"
+        value="电子技术/半导体/集成电路" />
+
+    <industry
+        id="7"
+        value="仪器仪表/工业自动化" />
+
+    <industry
+        id="8"
+        value="财务/审计" />
+
+    <industry
+        id="9"
+        value="金融/银行" />
+
+    <industry
+        id="10"
+        value="保险" />
+
+    <industry
+        id="11"
+        value="贸易/进出口" />
+
+    <industry
+        id="12"
+        value="批发/零售" />
+
+    <industry
+        id="13"
+        value="快速消费品(食品/饮料等)" />
+
+    <industry
+        id="14"
+        value="耐用消费品（家具/家电等）" />
+
+    <industry
+        id="15"
+        value="服装/纺织/皮革" />
+
+    <industry
+        id="16"
+        value="办公用品及设备" />
+
+    <industry
+        id="17"
+        value="钢铁/机械/设备/重工" />
+
+    <industry
+        id="18"
+        value="汽车/摩托车" />
+
+    <industry
+        id="19"
+        value="医疗/保健/卫生/美容" />
+
+    <industry
+        id="20"
+        value="生物/制药/医疗器械" />
+
+    <industry
+        id="21"
+        value="广告/创意" />
+
+    <industry
+        id="22"
+        value="公关/市场推广/会展" />
+
+    <industry
+        id="23"
+        value="文体/影视/艺术" />
+
+    <industry
+        id="24"
+        value="媒体传播" />
+
+    <industry
+        id="25"
+        value="出版/印刷/造纸" />
+
+    <industry
+        id="26"
+        value="房地产/物业管理" />
+
+    <industry
+        id="27"
+        value="建筑/建材" />
+
+    <industry
+        id="28"
+        value="家居/室内设计/装潢" />
+
+    <industry
+        id="29"
+        value="中介/专业服务" />
+
+    <industry
+        id="30"
+        value="检测/认证 " />
+
+    <industry
+        id="31"
+        value="法律/法务" />
+
+    <industry
+        id="32"
+        value="教育/科研/培训" />
+
+    <industry
+        id="33"
+        value="旅游/酒店" />
+
+    <industry
+        id="34"
+        value="娱乐休闲/餐饮/服务" />
+
+    <industry
+        id="35"
+        value="交通/运输/物流" />
+
+    <industry
+        id="36"
+        value="航天/航空" />
+
+    <industry
+        id="37"
+        value="化工/采掘/冶炼" />
+
+    <industry
+        id="38"
+        value="能源（电力/水利/矿产）" />
+
+    <industry
+        id="39"
+        value="原材料和加工" />
+
+    <industry
+        id="40"
+        value="政府/非盈利机构" />
+
+    <industry
+        id="41"
+        value="环保" />
+
+    <industry
+        id="42"
+        value="农林牧渔" />
+
+    <industry
+        id="43"
+        value="多元化集团" />
+
+    <industry
+        id="44"
+        value="人力资源服务" />
+
+    <industry
+        id="45"
+        value="其他行业" />
+
+</root>

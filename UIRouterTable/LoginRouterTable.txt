@@ -1,0 +1,16 @@
+auto generated, do not change !!!! 
+
+HOST : login
+
+输入号码
+/input_phone
+
+输入验证码
+/verify
+
+登录
+/login
+
+注册
+/register
+

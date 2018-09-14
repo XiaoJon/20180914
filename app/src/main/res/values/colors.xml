@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="gray">#333333</color>
+    <!-- 分割线 -->
+    <color name="transparent">#00000000</color><!--透明色 -->
+    <color name="line_color">#d9d9d9</color>
+    <!--黄色 -->
+    <!--<color name="orange">#FFA500</color>&lt;!&ndash;橙色 &ndash;&gt;-->
+    <color name="red">#FF0000</color><!--红色 -->
+    <!--褐色 -->
+    <!--绿色 -->
+    <!--蓝色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <!--灰色cc -->
+    <!--灰色8f -->
+    <!-- 按压按钮颜色 浅绿 -->
+    <!--from JMessage-->
+
+    <!-- 灰色 -->
+    <!-- 绿色 -->
+    <color name="gray_8c">#8C96AB</color>
+    <!--from JMessage end-->
+    <!-- 点击效果色值 -->
+    <!-- bar -->
+    <!-- 聊天 -->
+    <!--<color name="btn_register_normal">#ffffff</color>-->
+    <!--<color name="btn_register_pressed">#00acff</color>-->
+    <!--<color name="common_bottom_bar_normal_bg">#2d2f31</color>-->
+    <!--<color name="common_bottom_bar_selected_bg">#161718</color>-->
+    <!--<color name="common_botton_bar_blue">#2ea7e0</color>-->
+    <!--<color name="bottom_bar_normal_bg">#2D2F31</color>-->
+    <!--<color name="btn_white_normal">#f7f8f8</color>-->
+    <!--<color name="btn_white_pressed">#b5b5b6</color>-->
+    <!--<color name="btn_gray_pressed_status">#b5b5b6</color>-->
+    <!--<color name="btn_blue_pressed">#0066FF</color>-->
+    <!--<color name="black_deep">#FF000000</color>-->
+    <!--<color name="btn_answer_pressed">#4ebcd3</color>-->
+    <!--<color name="btn_answer_normal">#2dafa3</color>-->
+    <color name="orange_color">#FFAB36</color>
+
+
+
+    <!--蒙版-->
+
+
+    <!-- 按压按钮颜色 浅绿 -->
+
+
+
+</resources>
+

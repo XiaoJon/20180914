@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="project_status_array">
+        <item>进行中</item>
+        <item>归档</item>
+        <item>暂停</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="project_open_array">
+        <item>不公开</item>
+        <item>公开</item>
+    </string-array>
+    <string-array name="project_progress_type_array">
+        <item>根据任务完成进度自动计算</item>
+        <item>手动输入进度</item>
+    </string-array>
+    <string-array name="project_state_change_notify_array">
+        <item>确定要启用该项目吗?</item>
+        <item>确定要归档该项目吗?</item>
+        <item>确定要暂停该项目吗?</item>
+        <item>确定要删除该项目吗?</item>
+    </string-array>
+    <string-array name="project_share_detail_menu_array">
+        <item>编辑</item>
+        <item>置顶</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="project_share_detail_menu_array_without_auth">
+        <item>置顶</item>
+    </string-array>
+    <string-array name="project_share_relevant_menu">
+        <item>任务</item>
+        <item>备忘录</item>
+        <item>审批</item>
+        <item>自定义模块</item>
+    </string-array>
+
+</resources>

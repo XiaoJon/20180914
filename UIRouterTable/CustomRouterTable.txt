@@ -1,0 +1,28 @@
+auto generated, do not change !!!! 
+
+HOST : custom
+
+新增 自定义
+/add
+
+修改 自定义
+/edit
+
+自定义数据详情
+/detail
+
+文件详情
+/file
+
+选择自定义数据列表控制器
+/select
+
+数据列表控制器
+/temp
+
+引用组件 列表
+/referenceTemp
+
+查重
+/repeatCheck
+

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_action"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_next"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text11"
+                    android:minWidth="80dp"
+                    android:text="发件人"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/rl_more_1"
+                    android:layout_toRightOf="@id/text12"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/black_4a"
+                    android:textSize="14sp"
+                    tools:text="ssshyu001@163.com"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_attachment"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:minHeight="50dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/icon_attachment_green"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text51"
+                    android:minWidth="80dp"
+                    android:text="主题"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/text53"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/rl_attachment"
+                    android:layout_toRightOf="@id/text52"
+                    android:background="@color/white"
+                    android:ems="50"
+                    android:gravity="center_vertical"
+                    android:hint="请输入"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black_4a"
+                    android:textColorHint="#A0A0AE"
+                    android:textCursorDrawable="@drawable/jmui_text_cursor_bg"
+                    android:textSize="16dp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/text61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="  "
+                    android:textColor="@color/_FF1D32"/>
+
+
+                <TextView
+                    android:id="@+id/text62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/text61"
+                    android:minWidth="100dp"
+                    android:text="附件"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="上传附件"
+                    android:textColor="@color/main_green"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="请输入邮件正文"
+                android:minHeight="60dp"
+                android:padding="16dp"
+                android:textColorHint="@color/gray_bb"
+                android:textCursorDrawable="@drawable/jmui_text_cursor_bg"
+                android:visibility="gone"/>
+
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.tencent.smtt.sdk.WebView
+                    android:id="@+id/wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_attachment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/fl_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AACCCCCC"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_widget_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <include layout="@layout/email_line_10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_widget_container"
+                android:minHeight="300dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

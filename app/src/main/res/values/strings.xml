@@ -1,0 +1,129 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">TeamFace</string>
+    <string name="app_copy_right">Copyright©%s Teamface</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--提示类信息-->
+    <string name="err_get_function_auth_failure">获取功能权限失败!</string>
+    <string name="alert_init_menu">正在初始化菜单,请稍后!</string>
+    <string name="alert_choose_service_type">选择服务类型</string>
+
+
+    <!-- 主界面 -->
+    <string name="contacts">通讯录</string>
+    <string name="workBenchService">工作台</string>
+    <string name="mine">我的</string>
+
+    <string name="statistic">数据分析</string>
+
+    <string name="dl_waiting">请稍等...</string>
+
+    <!-- 发送文件 -->
+
+    <!--from JMessage end-->
+    <string name="already_in_bottom">已经到底了...</string>
+
+    <string name="project_is_empty">暂无项目，快去新建项目吧</string>
+    <string name="new_project">新建项目</string>
+
+    <!--from JMessage end-->
+
+    <!--show file option more-->
+    <!--文件库-->
+
+    <string name="project_description">项目描述</string>
+
+
+
+
+    <!-- 工作汇报 -->
+    <string name="attachment">附件</string>
+    <string name="upload_attachment">上传附件</string>
+    <string name="cooperate">协作</string>
+    <string name="approve">审批</string>
+    <string name="completed">已完成</string>
+    <string name="already_passed">已通过</string>
+    <string name="manage">管理</string>
+
+
+    <!--商品添加服务-->
+    <string name="no_search_result">暂无搜索结果～</string>
+
+    <!--文件库相关-->
+
+
+
+    <string name="operation">操作</string>
+    <string name="file_delete_folder_hint">删除后此文件夹中的文件与子文件夹将会一并删除且不可恢复。你确定要删除吗？</string>
+    <string name="file_delete_recent_contact_hint">您确定要清空吗？</string>
+
+    <string name="operation_hint">提示</string>
+
+    <string name="personal_file">个人文件</string>
+    <string name="app_file">应用文件</string>
+    <string name="my_share_file">我的共享</string>
+    <string name="share_to_me_file">与我共享</string>
+
+    <string name="recently_contacts">常用联系人</string>
+    <string name="search_contacts">联系人</string>
+    <string name="clear_recently_contacts">清空</string>
+    <string name="file_library">文件库</string>
+
+
+    <!--企信-->
+
+
+
+
+
+
+    <string name="sdcard_not_prepare_toast">sdcard尚未准备好</string>
+    <string name="choose_album_title">选择相册</string>
+    <string name="picture_num_limit_toast">您最多只能同时发送9张图片</string>
+    <string name="sending_hint">正在发送</string>
+    <string name="load_origin_image">查看原图</string>
+    <string name="origin_picture">原图</string>
+    <string name="choose">选择</string>
+    <string name="downloading_hint">正在下载</string>
+    <string name="download_completed_toast">下载完成</string>
+    <string name="file_fetch_failed">文件获取失败</string>
+    <string name="jmui_record_voice_permission_denied">请在应用的权限管理中将使用录音选项设置为允许，
+        否则将无法使用录音功能
+    </string>
+
+
+
+
+    <!-- 设置 -->
+    <string name="change_phone">更换手机号码</string>
+    <string name="language">语言</string>
+    <string name="bind_weixin">绑定微信号</string>
+    <string name="setting_upload_download">文件大于10M仅在WiFi连接时上传/下载</string>
+    <string name="change_phone_hint">提示：更换手机后，下次登录可使用新手机号登录。</string>
+    <string name="head_portrait">头像</string>
+    <string name="telephone">手机号</string>
+    <string name="position">职务</string>
+    <string name="my_rq_code">我的二维码</string>
+    <string name="my_address">我的地址</string>
+    <string name="add_address">新增地址</string>
+    <string name="edit_address">修改地址</string>
+    <string name="address">地址</string>
+    <string name="location">所在地区</string>
+    <string name="signature">个性签名</string>
+    <string name="my_card">我的名片</string>
+    <string name="consignee">收货人</string>
+    <string name="select_location">选择地区</string>
+    <string name="detail_address">详细地址</string>
+    <string name="zip_code">邮政编码</string>
+    <string name="select_company">选择企业</string>
+
+    <!-- 审批 -->
+    <string name="approval_task">审批流程</string>
+
+    <string name="approve_opinion_hint">请输入200字以内（选填）</string>
+    <string name="approve_cc">抄送人</string>
+
+    <string name="chart">仪表盘</string>
+    <string name="report">报表</string>
+</resources>

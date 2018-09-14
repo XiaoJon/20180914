@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_mtopimg"
+        android:layout_width="match_parent"
+        android:layout_height="240dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_base_info_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_head"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dip"
+            android:layout_marginTop="190dp"
+            android:padding="2.5dp">
+
+            <ImageView
+                android:id="@+id/siv_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                tools:src="@drawable/jmui_head_icon" />
+        </FrameLayout>
+
+        <com.hjhq.teamface.view.textview.StrokeTextView
+            android:id="@+id/u_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dip"
+            android:layout_marginTop="205dip"
+            android:layout_toLeftOf="@id/fl_head"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="Jun" />
+    </RelativeLayout>
+</FrameLayout>

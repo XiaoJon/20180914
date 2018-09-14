@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="请输入(必填)"
+                android:minLines="2"
+                android:padding="10dp"
+                android:textColor="@color/gray_69"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_follow_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/gray_a0"
+                android:textSize="14dp"
+                android:visibility="gone"
+                tools:text="截止时间：2017年5月20日 15:40"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom_option"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_sales_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_follow_up"
+            android:text="选择销售阶段"
+            android:textColor="@color/gray_8c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_communication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_follow_up"
+            android:text="沟通方式"
+            android:textColor="@color/gray_8c"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_option"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_default_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_app_backgroud_color">
+
+        <ImageView
+            android:id="@+id/iv_photograph"
+            style="@style/follow_up_options_style"
+            android:src="@drawable/icon_photograph" />
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            style="@style/follow_up_options_style"
+            android:src="@drawable/icon_voice" />
+
+        <ImageView
+            android:id="@+id/iv_attachment"
+            style="@style/follow_up_options_style"
+            android:src="@drawable/icon_attachment" />
+
+        <ImageView
+            android:id="@+id/iv_relevance"
+            style="@style/follow_up_options_style"
+            android:src="@drawable/icon_relevance" />
+
+        <ImageView
+            android:id="@+id/iv_follow_time"
+            style="@style/follow_up_options_style"
+            android:src="@drawable/icon_follow_time" />
+    </LinearLayout>
+</RelativeLayout>

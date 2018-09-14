@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="60dp">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/attendance_work_time"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_time11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:hint="@string/attendance_please_select_hint"
+            android:text="09:00"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/default_app_backgroud_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="60dp">
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/attendance_off_time"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_time12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:hint="@string/attendance_please_select_hint"
+            android:text="18:00"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_app_backgroud_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_remind_mode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_remind_time"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_mode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/attendance_rest_time"
+            android:textColor="#333333"
+            android:textSize="16dp"/>
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/mode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:checked="false"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/ios_thumb_selector"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp"/>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/default_app_backgroud_color"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="60dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/attendance_rest_time_start"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_time13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv3"
+            android:hint="@string/attendance_please_select_hint"
+            android:text="12:00"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/default_app_backgroud_color"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="60dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/attendance_rest_time_end"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_time14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv4"
+            android:hint="@string/attendance_please_select_hint"
+            android:text="13:00"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

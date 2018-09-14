@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.project">
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".application.ProjectApplication"
+        android:allowBackup="false"
+        android:label="@string/project_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="android:label">
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".presenter.ProjectActivity"/>
+        <activity android:name=".presenter.ProjectDetailActivity"/>
+        <activity android:name=".presenter.navigation.TaskGroupActivity"/>
+        <activity android:name=".presenter.navigation.EditGroupActivity"/>
+        <activity android:name=".presenter.navigation.EditTaskTempActivity"/>
+        <activity android:name=".presenter.navigation.AddGroupActivity"/>
+        <activity android:name=".presenter.navigation.AddTaskTempActivity"/>
+        <activity android:name=".presenter.SelectModuleActivity"/>
+        <!-- 项目设置 -->
+        <activity
+            android:name=".presenter.EditProjectActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".presenter.ProjectRoleActivity"/>
+        <!-- 新建项目 -->
+        <activity android:name=".presenter.add.AddProjectActivity"/>
+        <!-- 项目模板 -->
+        <activity android:name=".presenter.ProjectTemplateActivity"/>
+        <!-- 添加项目任务 -->
+        <activity android:name=".presenter.task.AddTaskActivity"/>
+        <!-- 编辑任务 -->
+        <activity android:name=".presenter.task.EditTaskActivity"/>
+        <!-- 项目成员管理 -->
+        <activity android:name=".presenter.ProjectMemberActivity"/>
+        <!-- 项目文件夹(文件级别) -->
+        <activity android:name=".presenter.ProjectFileActivity"/>
+        <!-- 项目分组列表(文库一级文件夹) -->
+        <activity android:name=".presenter.ProjectGroupFolderListActivity"/>
+        <!-- 项目文库二级文件夹 -->
+        <activity android:name=".presenter.ProjectFolderListActivity"/>
+        <!-- 项目文件详情 -->
+        <activity android:name=".presenter.ProjectFileDetailActivity"/>
+        <!-- 项目相关搜索界面 -->
+        <activity android:name=".presenter.ProjectSearchActivity"/>
+        <!-- 新增分享/分享详情 -->
+        <activity android:name=".presenter.add.ProjectAddShareActivity"/>
+        <!-- 查看分享成员 -->
+        <activity android:name=".presenter.ProjectShareMemberActivity"/>
+        <!-- 添加项目文件夹 -->
+        <activity android:name=".presenter.add.ProjectAddFolderActivity"/>
+        <!-- 项目标签 -->
+        <activity android:name=".presenter.ProjectLabelsActivity"/>
+        <!-- 选择任务 -->
+        <activity android:name=".presenter.task.SelectTaskActivity"/>
+        <activity android:name=".presenter.task.QuoteTaskActivity"/>
+        <activity android:name=".presenter.task.SelectAllTaskActivity"/>
+        <!-- 搜索任务 -->
+        <activity android:name=".presenter.task.SearchTaskActivity"/>
+        <!-- 协作人 -->
+        <activity android:name=".presenter.task.TaskMemberActivity"/>
+        <!-- 任务详情 -->
+        <activity android:name=".presenter.task.TaskDetailActivity"/>
+        <!-- 个人任务详情 -->
+        <activity android:name=".presenter.task.PersonalTaskDetailActivity"/>
+
+        <!-- 点赞列表 -->
+        <activity android:name=".presenter.task.TaskThumbUpActivity"/>
+        <!-- 移动任务 -->
+        <activity android:name=".presenter.task.MoveTaskActivity"/>
+        <!-- 复制任务 -->
+        <activity android:name=".presenter.task.CopyTaskActivity"/>
+        <!-- 选择主节点 -->
+        <activity android:name=".presenter.task.SelectNodeActivity"/>
+        <!-- 选择子节点 -->
+        <activity android:name=".presenter.task.SelectSubNodeActivity"/>
+        <!-- 添加子任务 -->
+        <activity android:name=".presenter.task.AddSubTaskActivity"/>
+        <!-- 设置重复任务 -->
+        <activity android:name=".presenter.task.RepeatTaskActivity"/>
+        <!-- 设置任务提醒 -->
+        <activity android:name=".presenter.task.TaskRemindActivity"/>
+        <!-- 设置重复个人任务 -->
+        <activity android:name=".presenter.task.PersonalTaskRepeatActivity"/>
+        <!-- 设置个人任务提醒 -->
+        <activity android:name=".presenter.task.PersonalTaskRemindActivity"/>
+        <!-- 选择星期重复日期 -->
+        <activity android:name=".presenter.task.SelectWeeklyRepeatDateActivity"/>
+        <!-- 选择每月重复日期 -->
+        <activity android:name=".presenter.task.SelectMonthRepeatDateActivity"/>
+        <!-- 结束重复 -->
+        <activity android:name=".presenter.task.EndOfRepeatActivity"/>
+        <!-- 选择截止时间 -->
+        <activity android:name=".presenter.task.BeforeDeadlineActivity"/>
+        <!-- 提醒方式 -->
+        <activity android:name=".presenter.task.RemindWayActivity"/>
+        <!-- 任务状态 -->
+        <activity android:name=".presenter.task.TaskStatusActivity"/>
+        <!-- 项目模板 -->
+        <activity android:name=".presenter.temp.ProjectTempFlowActivity"/>
+        <!-- 选择工作流模板 -->
+        <activity android:name=".presenter.navigation.SelectWorkFlowActivity"/>
+        <!-- 工作流 -->
+        <activity android:name=".presenter.navigation.WorkFlowActivity"/>
+        <!-- 备忘录选择项目 -->
+        <activity android:name=".presenter.ChooseProjectActivity"/>
+        <!-- 个人任务关联组件选择模块 -->
+        <activity android:name=".presenter.reference.SelectReferenceModuleActivity"/>
+        <!-- 个人任务关联组件选择项目 -->
+        <activity android:name=".presenter.reference.ReferenceChooseProjectActivity"/>
+        <!-- 个人任务关联组件选择分组 -->
+        <activity android:name=".presenter.reference.ReferenceChooseGroupActivity"/>
+        <!-- 个人任务关联组件选择列表 -->
+        <activity android:name=".presenter.reference.ReferenceChooseListActivity"/>
+    </application>
+
+</manifest>

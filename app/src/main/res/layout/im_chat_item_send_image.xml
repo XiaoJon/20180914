@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/jmui_chat_item_send_layout">
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_sender_avatar_iv"
+            style="@style/jmui_chat_item_sender_avatar_style"/>
+
+        <FrameLayout
+            android:id="@+id/jmui_msg_fl"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/jmui_sender_avatar_iv"
+
+            >
+
+            <com.hjhq.teamface.feature.chatting.BubbleImageView
+                android:id="@+id/jmui_picture_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/jmui_fetch_failed"
+                app:siArrowPosition="right"
+                app:siRadius="5dp"/>
+
+            <TextView
+                android:id="@+id/jmui_progress_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/jmui_sending_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/jmui_msg_fl"
+            android:src="@drawable/jmui_sending_img"/>
+
+        <ImageButton
+            android:id="@+id/jmui_fail_resend_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/jmui_msg_fl"
+            android:background="@drawable/jmui_send_error"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

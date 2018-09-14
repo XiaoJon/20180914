@@ -1,0 +1,10 @@
+<resources>
+
+
+    <!--  *****************************CRM**************************   -->
+
+
+    <style name="custom_textSize" >
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

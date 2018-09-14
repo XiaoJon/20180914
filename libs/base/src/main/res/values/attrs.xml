@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShaderImageView">
+        <attr name="siArrowPosition"/>
+        <attr name="siBorderAlpha" format="float"/>
+        <attr name="siBorderColor" format="color"/>
+        <!-- ShaderImageView-->
+        <attr name="siBorderType"/>
+        <attr name="siBorderWidth" format="dimension"/>
+        <attr name="siForeground" format="integer|reference"/>
+        <!--  Rounded ImageBean View-->
+        <attr name="siRadius" format="dimension"/>
+        <!-- PorterImageView-->
+        <attr name="siShape" format="integer|reference"/>
+        <attr name="siSquare" format="boolean"/>
+        <attr name="siStrokeCap"/>
+        <attr name="siStrokeJoin"/>
+        <attr name="siStrokeMiter" format="dimension"/>
+        <!-- BubbleImageView-->
+        <attr name="siTriangleHeight" format="dimension"/>
+    </declare-styleable>
+    <attr name="siArrowPosition">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+    <attr name="siBorderType">
+        <enum name="stroke" value="0"/>
+        <enum name="fill" value="1"/>
+    </attr>
+    <attr name="siStrokeCap">
+        <enum name="butt" value="0"/>
+        <enum name="round" value="1"/>
+        <enum name="square" value="2"/>
+    </attr>
+    <attr name="siStrokeJoin">
+        <enum name="bevel" value="0"/>
+        <enum name="miter" value="1"/>
+        <enum name="round" value="2"/>
+    </attr>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+
+    <!-- 波浪 -->
+    <declare-styleable name="WaveView">
+        <attr name="wave_color" format="color" />
+        <attr name="progress" format="integer" />
+        <attr name="wave_length" format="integer" />
+        <attr name="wave_height" format="integer" />
+        <attr name="wave_hz" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference" />
+    </declare-styleable>
+</resources>

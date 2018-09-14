@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_workbeanch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--顶部浮动栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/title_bar_txt_color"
+            android:textSize="@dimen/text_size_18"
+            tools:text="深圳市汇聚华企科技有限公司" />
+
+        <ImageView
+            android:id="@+id/iv_app_module"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_more_app_module" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.hjhq.teamface.common.view.scrollview.MyNestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            app:top_offset="85dp">
+
+            <LinearLayout
+                android:id="@+id/workbench_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <!--banner 布局 https://github.com/youth5201314/banner-->
+                <com.youth.banner.Banner
+                    android:id="@+id/top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    app:delay_time="2000"
+                    app:is_auto_play="true"
+                    app:scroll_time="800" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_workbench_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="vertical"
+                    android:tag="fix">
+
+
+                    <include
+                        android:id="@+id/rl_workbench_indicator"
+                        layout="@layout/workbench_indicator_layout" />
+                </LinearLayout>
+
+                <include layout="@layout/line" />
+
+                <FrameLayout
+                    android:id="@+id/fl_work_bench"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </com.hjhq.teamface.common.view.scrollview.MyNestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_top_workbench_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </FrameLayout>
+</LinearLayout>

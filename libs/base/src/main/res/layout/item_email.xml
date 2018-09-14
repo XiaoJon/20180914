@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/default_app_backgroud_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/avatar_in_contacts_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_who"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/read_state"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/email_unread_dot"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_draft_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/read_state"
+                    android:text="[草稿]"
+                    android:textColor="@color/red_f4"
+                    android:textSize="12dp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/icon_emergency"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/email_state_emergency"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/iv_approval_state"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/email_approval_state_pass_icon"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/iv_timer_state"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/email_icon_timer"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/iv_send_state"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/email_has_bean_rejected_to_receive"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/ll_state"
+                    android:layout_toRightOf="@+id/tv_draft_state"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#17171A"
+                    android:textSize="16dp"
+                    tools:text="yokohu1414@service.netease.com"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#4A4A4A"
+                    android:textSize="12dp"
+                    tools:text="关于上次讨论的列表问题"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_preview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#A0A0AE"
+                    android:textSize="12dp"
+                    tools:text="2018-01-23"/>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/tv_time"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#FF4A4A4A"
+                    android:textSize="12dp"
+                    tools:text="关于上次讨论的列表问题"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

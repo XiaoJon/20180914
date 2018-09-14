@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/jmui_chat_item_receive_layout">
+
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"
+        android:background="@drawable/im_chat_time_bg"
+        android:textColor="@color/white"
+        tools:text="12:44"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_recever_avatar_iv"
+            style="@style/jmui_chat_item_receiver_avatar_style"/>
+
+        <TextView
+            android:id="@+id/jmui_display_name_tv"
+            style="@style/jmui_chat_display_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jmui_recever_avatar_iv"
+            tools:text="名字"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_receive_file"
+            android:layout_width="220dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/jmui_display_name_tv"
+
+            android:layout_toRightOf="@+id/jmui_recever_avatar_iv"
+            android:background="@drawable/jmui_msg_receive_bg"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_receive_file_icon"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/tv_receive_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_receive_file_icon"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/iv_receive_file_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray_69"
+                android:textSize="12sp"
+                tools:text="文件名"/>
+
+            <TextView
+                android:id="@+id/tv_receive_file_sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_receive_file_icon"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/iv_receive_file_icon"
+                android:ellipsize="middle"
+                android:maxWidth="100dp"
+                android:textColor="@color/gray_69"
+                android:textSize="12sp"
+                tools:text="花花花"/>
+
+            <TextView
+                android:id="@+id/tv_receive_file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_receive_file_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_receive_file_sender_name"
+                android:textColor="@color/gray_69"
+                android:textSize="12sp"
+                tools:text="12.5MB"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

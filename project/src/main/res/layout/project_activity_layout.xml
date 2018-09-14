@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
+
+            <ImageView
+                android:id="@+id/iv_left_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_blue_back" />
+
+            <com.hjhq.teamface.common.view.SearchBar
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/iv_left_bar"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_project"
+                    android:layout_width="46dp"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/project_titlt_selecter_bg"
+                    android:gravity="center"
+                    android:text="@string/project"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_task"
+                    android:layout_width="46dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/project_titlt_selecter_bg"
+                    android:gravity="center"
+                    android:text="@string/task"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_add_bar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/iv_search_bar"
+                android:src="@drawable/project_icon_add" />
+
+            <ImageView
+                android:id="@+id/iv_search_bar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/project_icon_search" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.hjhq.teamface.common.view.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

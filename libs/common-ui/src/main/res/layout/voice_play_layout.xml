@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="100dp"
+            android:background="@drawable/icon_mp3"
+            android:minHeight="110dp"
+            android:minWidth="100dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:progressDrawable="@drawable/audio_seekbar"
+                android:splitTrack="false"
+                android:thumb="@drawable/green_seekbar_thumb"
+                android:thumbOffset="0dp" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/seekbar"
+                android:gravity="center"
+                android:text="00:00" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/seekbar"
+                android:gravity="center"
+                android:text="00:00" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_audio_paly" />
+
+    </LinearLayout>
+
+
+</ScrollView>

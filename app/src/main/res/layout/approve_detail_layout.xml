@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_app_backgroud_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gray_stroke"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_expression_hover" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_avatar"
+            android:lines="1"
+            android:textColor="@color/black_17"
+            android:textSize="@dimen/text_size_16"
+            tools:text="ssdfasdf" />
+
+        <View
+            android:id="@+id/state_view"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/iv_avatar"
+            android:background="@drawable/circle_approve_revoked_bg" />
+
+        <TextView
+            android:id="@+id/tv_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/state_view"
+            android:lines="1"
+            android:textColor="@color/gray_bb"
+            android:textSize="@dimen/text_size_12"
+            tools:text="审批中" />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_custom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <com.hjhq.teamface.oa.approve.widget.ApproveTaskView
+                android:id="@+id/approve_task_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_ccto"
+                style="@style/custom_horizontal_layout_style"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/custom_multi_text_horizontal_title_style"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/approve_cc"
+                    android:textColor="@color/gray_69" />
+
+                <com.hjhq.teamface.basis.view.member.MembersView
+                    android:id="@+id/member_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gray_stroke"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_option1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/main_green"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"
+            tools:text="催办"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray_e7"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_option2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FF6F00"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"
+            tools:text="撤销"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray_e7"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_option3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFC057"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"
+            tools:text="驳回"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray_e7"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_option4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_4a"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"
+            tools:text="评论"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_approve_tag"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        tools:src="@drawable/icon_approve_pass_tag" />
+</RelativeLayout>

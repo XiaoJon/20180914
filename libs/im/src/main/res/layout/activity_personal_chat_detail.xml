@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/__picker_gray_f2">
+
+    <ScrollView
+        android:id="@+id/chat_detail_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <com.hjhq.teamface.common.view.HelperItemView
+                android:id="@+id/put_on_top"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:isLine="false"
+                app:itemName="@string/put_on_top"/>
+
+            <include layout="@layout/line"/>
+
+            <com.hjhq.teamface.common.view.HelperItemView
+                android:id="@+id/no_disturb_rl"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:isLine="false"
+                app:itemName="@string/set_do_not_disturb"/>
+
+            <include layout="@layout/line_margin_10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_view_chat_file"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_view_file"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/view_file"
+                    android:textColor="@color/chat_detail_item_hit_color"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <ImageView
+                    android:id="@+id/iv_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/icon_to_next"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_margin_10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/actionbar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/team_message_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_data_analysis"
+                style="@style/ActionBarIv"
+                android:src="@drawable/actionbar_statistic_click"/>
+
+            <TextView
+                android:id="@+id/tv_data_analysis"
+                style="@style/ActionBarTv"
+                android:layout_below="@id/iv_data_analysis"
+                android:text="@string/statistic"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/workbench_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/workbench_iv"
+                style="@style/ActionBarIv"
+                android:src="@drawable/actionbar_workbench_normal"/>
+
+            <TextView
+                android:id="@+id/workbench_tv"
+                style="@style/ActionBarTv"
+                android:layout_below="@id/workbench_iv"
+                android:text="@string/workBenchService"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/teamwork_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/team_message_iv"
+                style="@style/ActionBarIv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/actionbar_team_message_normal"/>
+
+            <TextView
+                android:id="@+id/team_message_tv"
+                style="@style/ActionBarTv"
+                android:layout_below="@id/team_message_iv"
+                android:text="@string/team_message"/>
+
+            <TextView
+                android:id="@+id/tv_im_total_unread_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="visible"
+                tools:text="99+"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/team_mine_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+
+            <ImageView
+                android:id="@+id/mine_iv"
+                style="@style/ActionBarIv"
+                android:src="@drawable/actionbar_workbench_normal"/>
+
+            <TextView
+                android:id="@+id/mine_tv"
+                style="@style/ActionBarTv"
+                android:layout_below="@id/mine_iv"
+                android:text="@string/mine"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/addIv"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/actionbar_add"/>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/actionbar_ll"
+        android:background="@color/gray_c8"/>
+
+    <com.hjhq.teamface.common.view.NoScrollViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divider_view">
+
+    </com.hjhq.teamface.common.view.NoScrollViewPager>
+
+
+</RelativeLayout>

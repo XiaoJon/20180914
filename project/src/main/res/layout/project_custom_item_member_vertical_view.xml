@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/project_custom_vertical_layout_style">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/project_custom_multi_text_vertical_title_style"
+            tools:text="  人员" />
+
+        <com.hjhq.teamface.basis.view.member.MembersView
+            android:id="@+id/member_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp" />
+    </LinearLayout>
+
+    <View style="@style/margin_left_lint_style" />
+</LinearLayout>

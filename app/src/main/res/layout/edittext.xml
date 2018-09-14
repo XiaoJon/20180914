@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/all_backgroud_color"
+    android:paddingBottom="8dp">
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/line" />
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="45dip"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/et_commentinfo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/send_button_bg"
+        android:text="@string/button_send"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_commentinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/bt_send"
+        android:background="@drawable/input_text_frames"
+        android:gravity="center_vertical"
+        android:labelFor="@+id/et_commentinfo"
+        android:maxLength="1000"
+        android:maxLines="5"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#323232"
+        android:textColorHint="#c8c8c8"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface">
+
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 读取设置 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <!--华为手机更新应用桌面角标需要的权限-->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <!---->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="android:label,android:icon,android:name,android:theme">
+
+
+        <!-- 启动界面 -->
+        <activity
+            android:name=".oa.login.ui.SplashActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".oa.main.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!-- 报表 -->
+        <activity android:name=".oa.main.ReportActivity"/>
+        <!--通讯录-->
+        <activity android:name=".oa.main.ContactsActivity"/>
+        <!-- 企业圈 -->
+        <activity
+            android:name=".oa.friends.FriendsActivity"
+            android:launchMode="singleTask"/>
+        <!-- 在线帮助-->
+        <activity android:name=".oa.main.OnlineHelpActivity"/>
+        <!-- 发表企业圈动态 -->
+        <activity android:name=".oa.friends.AddFriendsActivity"/>
+        <activity
+            android:name=".common.activity.FullscreenViewImageActivity"
+
+            android:theme="@style/AppTheme.FullScreen"/>
+        <!-- 设置 -->
+        <activity
+            android:name=".oa.main.SettingActivity"
+            android:launchMode="singleTask"/>
+        <!-- 修改密码 -->
+        <activity android:name=".oa.main.ChangePasswordActivity"/>
+        <!-- 修改手机号 -->
+        <activity android:name=".oa.main.ChangePhoneActivity"/>
+
+        <!-- 个人信息 -->
+        <activity android:name=".oa.main.UserInfoActivity"/>
+        <!-- 个人头像 -->
+        <activity android:name=".oa.main.ChangeAvatarActivity"/>
+        <!-- 头像裁剪 -->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <!-- 二维码名片 -->
+        <activity android:name=".oa.main.UserQRCodeActivity"/>
+        <!--二维码名片 版本2-->
+        <activity android:name=".oa.main.UserQRCodeActivityV2"/>
+        <!--测试条形码-->
+        <activity android:name=".oa.main.TestBarCodeActivity"/>
+        <!--自定义名片-->
+        <activity android:name=".oa.main.UserDiyCardActivity"/>
+        <activity android:name=".oa.main.ChooseCardTeamActivity"/>
+        <!-- 签名 -->
+        <activity android:name=".oa.main.SignatureActivity"/>
+        <!-- 二维码扫描 -->
+        <!-- 切换公司 -->
+        <activity android:name=".oa.main.SelectCompanyActivity"/>
+        <!-- 公司成员 -->
+        <activity android:name=".oa.CompanyMembersActivity"/>
+        <!--公司架构-->
+        <activity android:name=".oa.main.CompanyOrganizationActivity"/>
+
+        <!-- 员工信息 -->
+        <activity android:name=".oa.main.EmployeeInfoActivity"/>
+        <!--搜索通讯录-->
+        <activity android:name=".oa.main.SearchContactActivity"/>
+        <!-- 24或以上版本,外部程序使用软件文件时使用 -->
+        <provider
+            android:name=".basis.provider.MyFileProvider"
+            android:authorities="com.hjhq.teamface.basis.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+
+        <!-- 通用编辑界面 -->
+        <activity android:name=".common.activity.EditActivity"/>
+
+        <activity
+            android:name="kankan.wheel.widget.regionselect.ProvinceSelectActivity"
+
+            android:theme="@style/Transparent"/>
+
+
+        <!-- ########################## 审批 ########################## -->
+
+        <!--审批列表-->
+        <activity android:name=".oa.approve.ui.ApproveActivity"/>
+        <!--选择审批-->
+        <activity android:name=".oa.approve.ui.SelectApproveActivity"/>
+        <!--搜索审批-->
+        <activity android:name=".oa.approve.ui.SearchApproveActivity"/>
+        <!--审批类型-->
+        <activity android:name=".oa.approve.ui.ApproveTypeActivity"/>
+        <!--审批详情-->
+        <activity android:name=".oa.approve.ui.ApproveDetailActivity"/>
+        <!--审批抄送人-->
+        <activity android:name=".oa.approve.ui.ApproveCcActivity"/>
+        <!--审批流程-->
+        <activity android:name=".oa.approve.ui.ApproveTaskActivity"/>
+        <!--审批操作-->
+        <activity
+            android:name=".oa.approve.ui.OptionApproveActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--审批通过驳回方式选择-->
+        <activity android:name=".oa.approve.ui.SelectTypePresenter"/>
+        <!--驳回节点选择-->
+        <activity android:name=".oa.approve.ui.SelectTaskPresenter"/>
+        <!--##########################文件库###############################-->
+        <!--邮件相关-->
+        <!--邮件主界面
+        <activity android:name=".presenter.EmailActivity3"/>
+        <activity android:name=".custom.ui.detail.EmailBoxFragment"/>
+        &lt;!&ndash;邮件详情&ndash;&gt;
+        <activity
+            android:name=".presenter.EmailDetailActivity"
+            android:screenOrientation="portrait"/>
+        &lt;!&ndash;新增邮件&ndash;&gt;
+        <activity
+            android:name=".presenter.NewEmailActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        &lt;!&ndash;选择审批人&ndash;&gt;
+        <activity android:name=".presenter.ChooseApprovalActivity"/>
+        &lt;!&ndash;邮件选择联系人&ndash;&gt;
+        <activity android:name=".presenter.ChooseEmailContactsActivity"/>
+        &lt;!&ndash;邮件通讯录&ndash;&gt;
+        <activity android:name=".presenter.EmailContactsActivity"/>
+        &lt;!&ndash;从模块中选择联系人&ndash;&gt;
+        <activity android:name=".presenter.ChooseModuleContactActivity"/>
+        &lt;!&ndash;选择发送邮件账户&ndash;&gt;
+        <activity android:name=".presenter.ChooseEmailAccountActivity"/>-->
+        <!-- 企信 -->
+
+
+        <!--查看聊天文件-->
+        <activity android:name=".im.activity.ChatFileActivity"/>
+        <!-- 个人聊天详情(设置) -->
+        <activity android:name=".im.activity.PersonalChatDetailActivity"/>
+        <!-- 聊天 -->
+
+        <!-- 搜索聊天记录 -->
+        <activity android:name=".im.activity.SearchChatActivity"/>
+        <!--搜索聊天相关-v2-->
+        <activity android:name=".im.activity.SearchChatActivityV2"/>
+        <!--搜索详情-->
+        <activity android:name=".im.activity.SearchChatDetailActivity"/>
+        <!--小助手搜索结果-->
+        <activity android:name=".im.activity.SearchAssistantListActivity"/>
+        <!--二级搜索-->
+        <activity android:name=".im.activity.SearchConvChatActivity"/>
+        <!-- 创建群 -->
+        <activity
+            android:name=".im.activity.CreateGroupActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!-- 全部群成员 -->
+        <activity android:name=".im.activity.GroupMemberActivity"/>
+        <activity android:name=".im.activity.SearchGroupChatActivity"/>
+        <!-- 选择群聊 -->
+        <activity android:name=".im.activity.ChooseGroupChatActivity"/>
+        />
+        <!-- 选择转发 -->
+        <activity android:name=".im.activity.ChooseSendMemberActivity"/>
+
+        <!--小助手列表界面-->
+        <activity
+            android:name=".im.activity.AppAssistantActivity"
+            android:launchMode="singleTask"/>
+        <!--小助手设置界面-->
+        <activity android:name=".im.activity.AppAssistantSettingActivity"/>
+        <!--已读未读成员-->
+        <activity android:name=".im.activity.MessageReadStateActivity"/>
+        <activity android:name=".oa.SelectMemberActivity2"/>
+
+
+    </application>
+
+</manifest>

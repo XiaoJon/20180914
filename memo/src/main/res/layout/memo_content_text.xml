@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="30dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/state_uncheck"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/checkbox"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="16dp"
+        tools:text="2"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/num"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="top"
+            android:lineSpacingExtra="8dp"
+            android:lineSpacingMultiplier="1.2"
+            android:minHeight="30dp"
+            android:textCursorDrawable="@drawable/memo_cursor"
+            android:textSize="16dp"
+            tools:text="365编辑器是一款拥有海量素材,动图图库,提供高效图文排版的微信编辑器. 支持实时预览,一键秒刷,多平台一键同步等功能,极大提高小编工作效率的必备编辑工具"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

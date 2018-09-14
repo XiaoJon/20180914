@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_sort"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="自定义排序"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_custom_sort_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_sort_down" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_custom_sort_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_create_time_asc"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="25dp">
+
+
+            <TextView
+                android:id="@+id/tv_create_time_asc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="创造时间升序"
+                android:textColor="@drawable/project_task_filter_text_color_selector"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_create_time_asc_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_create_time_asc"
+                android:paddingBottom="3dp"
+                android:text=" ↑"
+                android:textColor="@drawable/project_task_filter_text_color_selector"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/iv_create_time_asc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/project_navigation_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_create_time_desc"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="25dp">
+
+
+            <TextView
+                android:id="@+id/tv_create_time_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="创造时间降序"
+                android:textColor="@drawable/project_task_filter_text_color_selector"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_create_time_desc_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_create_time_desc"
+                android:paddingBottom="3dp"
+                android:text=" ↓"
+                android:textColor="@drawable/project_task_filter_text_color_selector"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/iv_create_time_desc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/project_navigation_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_time_asc"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_modify_time_asc"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_modify_time_asc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改时间升序"
+                    android:textColor="@drawable/project_task_filter_text_color_selector"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_modify_time_asc_arrows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:text=" ↑"
+                    android:textColor="@drawable/project_task_filter_text_color_selector"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_modify_time_asc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/project_navigation_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_time_desc"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="25dp">
+
+
+            <TextView
+                android:id="@+id/tv_modify_time_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="修改时间降序"
+                android:textColor="@drawable/project_task_filter_text_color_selector"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_modify_time_desc_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_modify_time_desc"
+                android:paddingBottom="3dp"
+                android:text=" ↓"
+                android:textColor="@drawable/project_task_filter_text_color_selector"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/iv_modify_time_desc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/project_navigation_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

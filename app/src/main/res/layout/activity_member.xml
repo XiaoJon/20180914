@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_personnel"
+        layout="@layout/item_employee" />
+
+
+    <TextView
+        android:id="@+id/tv_participant_count"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:textColor="@color/gray_bb"
+        android:textSize="14sp"
+        tools:text="参与人（4）" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_participant"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/item_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/add_member_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加参与人"
+            android:textColor="@color/main_green"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_sub_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="@string/project_sub_task_title"
+        android:maxLength="500"
+        android:padding="15dp"
+        android:textColor="@color/_323232"
+        android:textColorHint="@color/gray_a9"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/project_icon_addsub_task_executor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="执行人"
+            android:textColor="@color/gray_69" />
+
+        <com.hjhq.teamface.basis.view.member.MembersView
+            android:id="@+id/member_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+
+    <LinearLayout
+        android:id="@+id/ll_deadline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/project_icon_clock" />
+
+        <TextView
+            android:id="@+id/tv_deadline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="@string/project_deadline_in_add"
+            android:textColor="@color/gray_69"
+            android:textColorHint="#d6d6d6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/project_icon_next" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+</LinearLayout>

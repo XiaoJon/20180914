@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/default_app_backgroud_color"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_creator"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/item_bg_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/crm_filter_item_title"
+            tools:text="创建人"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_sort_down"
+            android:scaleType="center"/>
+    </RelativeLayout>
+
+    <View style="@style/default_lint_style"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_action_creator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3DB8C1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

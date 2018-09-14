@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/jmui_chat_item_receive_layout">
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"
+        tools:text="3天前"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_recever_avatar_iv"
+            style="@style/jmui_chat_item_receiver_avatar_style"/>
+
+        <TextView
+            android:id="@+id/jmui_display_name_tv"
+            style="@style/jmui_chat_display_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jmui_recever_avatar_iv"
+            />
+
+        <FrameLayout
+            android:id="@+id/jmui_voice_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jmui_display_name_tv"
+            android:layout_toRightOf="@id/jmui_recever_avatar_iv"
+            android:gravity="left">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp">
+
+                <TextView
+                    android:id="@+id/jmui_msg_receive_voice_content"
+                    style="@style/jmui_chat_content_style"
+                    android:layout_width="67dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/jmui_msg_receive_bg"
+                    android:minWidth="67dp"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/receive_voice_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/jmui_msg_receive_bg"
+                    android:minWidth="67dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/jmui_voice_receive"/>
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/jmui_receive_voice_length_tv"
+            style="@style/jmui_chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jmui_display_name_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jmui_voice_fl"
+            android:text="24秒"
+            android:textColor="@color/gray_c2"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/jmui_read_status_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/jmui_receive_voice_length_tv"
+            android:background="@drawable/jmui_voice_unread"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="3dp"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:progressDrawable="@drawable/audio_seekbar"
+        android:splitTrack="false"
+        android:thumb="@drawable/green_seekbar_thumb"
+        android:thumbOffset="0dp"
+        android:visibility="invisible"
+        tools:visibility="visible"/>
+</LinearLayout>

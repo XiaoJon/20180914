@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_app_backgroud_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/star1"
+                    android:text="@string/attendance_add_approval_label"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/type_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/set1"
+                    android:layout_toRightOf="@+id/name1"
+                    android:gravity="center_vertical"
+                    android:hint="请选择"
+                    android:padding="10dp"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/set1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"
+                    android:textSize="12dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/star2"
+                    android:text="@string/attendance_amend_state_label"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/state_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/name2"
+                    android:layout_toLeftOf="@+id/set2"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:padding="10dp"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/set2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="设置"
+                    android:textColor="@color/app_blue"
+                    android:textSize="12dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/star4"
+                    android:text="@string/attendance_start_time_label"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/name4"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toLeftOf="@+id/set4"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:padding="10dp"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/set4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="设置"
+                    android:textColor="@color/app_blue"
+                    android:textSize="12dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/star5"
+                    android:text="@string/attendance_end_time_label"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/content5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/name5"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toLeftOf="@+id/set5"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:padding="10dp"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/set5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="设置"
+                    android:textColor="@color/app_blue"
+                    android:textSize="12dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/star3"
+                    android:text="@string/attendance_duration_label"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/name3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toLeftOf="@+id/set3"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/set3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="设置"
+                    android:textColor="@color/app_blue"
+                    android:textSize="12dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/star6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="14dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/tv_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/star6"
+                    android:text="@string/attendance_duration_unit_label"
+                    android:textColor="#333333"
+                    android:textSize="16dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/unit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_name6"
+                    android:layout_toLeftOf="@+id/set6"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:padding="10dp"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/set6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="设置"
+                    android:textColor="@color/app_blue"
+                    android:textSize="12dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/attendance_approval_hint"
+                    android:textColor="@color/red"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

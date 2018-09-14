@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.filelib">
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.hjhq.teamface.filelib.application.FilelibApplication"
+        android:allowBackup="false"
+        android:label="@string/filelib_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="android:label">
+
+        <activity android:name=".FilelibTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AddFolderActivity"/>
+        <activity android:name=".activity.ChooseColorActivity"/>
+        <activity android:name=".activity.DownloadedFileActivity"/>
+        <activity
+            android:name=".activity.FileDetailActivity"/>
+        <activity android:name=".activity.FileDownloadHistoryActivity"/>
+        <activity android:name=".activity.FileHistoryVersionActivity"/>
+        <activity android:name=".activity.FileLibActivity"/>
+        <activity android:name=".activity.FileMainActivity"/>
+        <activity android:name=".activity.FileOnlinePreviewActivity"/>
+        <activity android:name=".activity.FolderAuthManageActivity"/>
+        <activity android:name=".activity.MoveFileActivity"/>
+        <activity android:name=".activity.ProjectListActivity"/>
+        <activity android:name=".activity.RenameFileActivity"/>
+        <activity android:name=".activity.SearchFileActivity"/>
+        <activity android:name=".activity.SelectFileActivity"/>
+        <activity android:name=".activity.SelectRootFileActivity"/>
+        <activity android:name=".activity.SetMemberFolderAuthActivity"/>
+        <activity android:name=".activity.SharedFileActivity"/>
+    </application>
+
+</manifest>

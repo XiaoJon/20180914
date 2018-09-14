@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_e7"
+        android:orientation="horizontal">
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/icon_blue_back"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="返回"
+            android:textColor="@color/gray_69"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_c8"/>
+
+
+        <TextView
+            android:id="@+id/menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="菜单"/>
+    </RelativeLayout>
+
+    <com.hjhq.teamface.basis.view.SwipeMenuLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_action">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants">
+
+            <RelativeLayout
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/tv_email_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_4a"
+                    android:textSize="16sp"
+                    tools:text="关于上次讨论的列表问题关于上次讨论"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_sender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_email_title">
+
+                    <TextView
+                        android:id="@+id/tv_hide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="3dp"
+                        android:text="隐藏"
+                        android:textColor="@color/url_color"
+                        android:textSize="12sp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_hide"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_email_sender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="60dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="3dp"
+                            android:text="发件人:"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_email_sender_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"
+                            tools:text="刘晓彤makeling@gmail.com"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_sender"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rl_ip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_ip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="60dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="3dp"
+                            android:text="IP地址:"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_ip_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"
+                            tools:text="36.51.253.36(中国华北北京市)"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rl_receiver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_email_receiver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="60dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="3dp"
+                            android:text="收件人:"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_email_receiver_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"
+                            tools:text="李秀宇Megan Keller;胡迪yoko@qq.com;刘晓彤makeling@gmail.com;"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rl_cc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="60dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="3dp"
+                            android:text="抄送人:"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_cc_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"
+                            tools:text="36.51.253.36(中国华北北京市)"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rl_bcc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_bcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="60dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="3dp"
+                            android:text="密送人:"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bcc_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"
+                            tools:text="36.51.253.36(中国华北北京市)"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="60dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="3dp"
+                            android:text="时    间:"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_time_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="3dp"
+                            android:textColor="@color/gray_a0"
+                            android:textSize="12sp"
+                            tools:text="2017-06-04 15:16（星期一）"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--附件-->
+                <RelativeLayout
+                    android:id="@+id/rl_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/ll_info"
+                    android:background="#EBEDF0"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/email_icon_timer"
+                        android:textColor="#4A4A4A"
+                        android:textSize="14dp"
+                        tools:text="定时邮件，将在2018-06-07 15:45发出"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_email_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rl_timer"
+                    android:paddingTop="15dp">
+
+                    <include
+                        android:id="@+id/line11"
+                        layout="@layout/line"/>
+
+                    <com.tencent.smtt.sdk.WebView
+                        android:id="@+id/wv_email_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/line11"/>
+
+
+                </RelativeLayout>
+
+                <!--附件-->
+                <RelativeLayout
+                    android:id="@+id/rl_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_email_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_attachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/transparent"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_state"
+                        android:layout_width="104dp"
+                        android:layout_height="82dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="15dp"
+                        tools:src="@drawable/icon_approve_pass_tag"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </com.hjhq.teamface.basis.view.SwipeMenuLayout>
+</RelativeLayout>

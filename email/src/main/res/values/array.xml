@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--邮件主界面侧滑菜单-->
+    <string-array name="email_menu_array">
+        <item>收件箱</item>
+        <item>未读</item>
+        <item>已发送</item>
+        <item>草稿箱</item>
+        <item>已删除</item>
+        <item>垃圾箱</item>
+        <item>返回首页</item>
+    </string-array>
+</resources>

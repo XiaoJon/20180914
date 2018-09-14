@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        tools:src="@color/_00CFC9"/>
+
+    <RelativeLayout
+        android:id="@+id/range_info"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/range_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            tools:src="@drawable/attendance_first_icon"/>
+
+        <TextView
+            android:id="@+id/range_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/range_icon"
+            tools:text="21120.5小时"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/range_info"
+        android:layout_toRightOf="@+id/avatar">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:textColor="@color/attendance_333333"
+            android:textSize="14dp"
+            tools:text="2018.09"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:textColor="@color/attendance_666666"
+            android:textSize="14dp"
+            tools:text="考勤组：产品中心组"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

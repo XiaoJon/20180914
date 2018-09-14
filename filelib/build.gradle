@@ -1,0 +1,54 @@
+apply plugin: 'com.dd.comgradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'me.tatarka.retrolambda'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true//分包配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "filelib"]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    resourcePrefix "filelib_"
+
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+    compile project(':common-ui')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile project(':download')
+    compile project(':base')
+    compile project(':componentservice')
+    compile project(':im')
+}
+combuild {
+    applicationName = 'com.hjhq.teamface.filelib.application.FilelibApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
+}

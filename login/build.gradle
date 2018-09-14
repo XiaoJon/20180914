@@ -1,0 +1,49 @@
+apply plugin: 'com.dd.comgradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true//分包配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "login"]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    resourcePrefix "login_"
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+dependencies {
+    compile project(':common-ui')
+    compile project(':im')
+    compile project(':componentservice')
+    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+combuild {
+    applicationName = 'com.hjhq.teamface.login.application.LoginApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
+}

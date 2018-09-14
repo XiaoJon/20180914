@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_back"
+        android:layout_width="50dp"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/__picker_back_white"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/titleBar_RightRL"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/titleBar_RightIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="3dp"/>
+
+        <ImageView
+            android:id="@+id/titleBar_RightIv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_border_size"
+            android:padding="3dp"
+            android:src="@drawable/menu_white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleBar_centerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/titleBar_RightRL"
+        android:layout_toRightOf="@+id/titlebar_back"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="ceshi"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+</RelativeLayout>

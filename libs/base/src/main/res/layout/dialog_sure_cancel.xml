@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/dialog_resend_mail_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/allTrans"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/dialog_phone_tip"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/dialog_resend_mail_tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black_17"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:text="删除标签"/>
+
+        <TextView
+            android:id="@+id/dialog_resend_mail_tv_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_resend_mail_tv_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="15"
+            android:textColor="@color/gray_69"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            tools:text="删除后，该标签无法恢复"/>
+
+        <View
+            android:id="@+id/dialog_resend_mail_phone_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dialog_resend_mail_tv_subTitle"
+            android:background="@color/gray_e7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_resend_mail_phone_line"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/dialog_resend_mail_btnRefuse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="取消"
+                android:textColor="@color/gray_bb"
+                android:textSize="@dimen/text_size_16"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_e7"/>
+
+            <Button
+                android:id="@+id/dialog_resend_mail_btnSure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="确定"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

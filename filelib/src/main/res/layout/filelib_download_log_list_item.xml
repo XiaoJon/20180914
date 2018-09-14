@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_conversation_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_who"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/iv_conversation_avatar"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_im_group"/>
+
+        <TextView
+            android:id="@+id/tv_folder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_conversation_avatar"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black_4a"
+            android:textSize="16dp"
+            android:visibility="visible"
+            tools:text="张小发大水发发送到法师打发斯蒂芬放大法师打发打发是的发送天"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/rl_time"
+        android:layout_toRightOf="@+id/rl_who"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/download_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="99次"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2016-10-19  11:14"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

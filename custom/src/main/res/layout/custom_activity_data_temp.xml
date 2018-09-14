@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_filtrate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/item_bg_color"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/item_name_margin_right"
+        android:paddingStart="@dimen/item_name_margin_left">
+
+        <LinearLayout
+            android:id="@+id/ll_sort"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/item_bg_color"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_sort_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/all"
+                android:textColor="@color/gray_69"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_sort_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sort_green_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone"
+                tools:text="1000条"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sort_down" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_approve"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_filtrate" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#505a6a" />
+
+        <ImageView
+            android:id="@+id/iv_filtrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_filtrate" />
+    </LinearLayout>
+
+    <View style="@style/default_lint_style" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

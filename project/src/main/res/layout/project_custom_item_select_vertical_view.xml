@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    style="@style/project_custom_vertical_layout_style">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/project_custom_input_vertical_title_style"
+        tools:text="  标题" />
+
+
+    <LinearLayout style="@style/project_custom_horizontal_layout_style">
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/project_custom_select_vertical_content_style"
+            tools:text="内容内容内容内容内容内容内容内容内容内容内容内容" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/custom_default_icon_style"
+            android:src="@drawable/icon_to_next" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:visibility="gone">
+
+            <com.hjhq.teamface.common.view.FlowLayout
+                android:id="@+id/pick_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="5dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/margin_left_lint_style" />
+</LinearLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/close"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多操作"
+            android:layout_margin="15dp"
+            android:textColor="@color/gray_69"
+            android:textSize="16sp" />
+
+        <GridView
+            android:id="@+id/tracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:verticalSpacing="50dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/newcreate_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/actionbar_add"
+            android:clickable="true"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+</RelativeLayout>

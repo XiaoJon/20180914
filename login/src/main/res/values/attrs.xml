@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CountDownButton-->
+    <declare-styleable name="login_CountDownButton">
+        <attr name="login_countDownFormat" format="string"/>
+        <attr name="login_countDown" format="float"/>
+        <attr name="login_countDownInterval" format="float"/>
+        <attr name="login_enableCountDown" format="boolean"/>
+    </declare-styleable>
+    <!--CountDownButton end-->
+</resources>

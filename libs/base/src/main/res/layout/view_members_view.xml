@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/fl_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/person_in_charge_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/member_sum_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/person_in_charge_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:textColor="@color/main_green"
+            android:textSize="@dimen/text_size_16"
+            tools:text="等6人" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/icon_to_next" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/add_member_ll"
+        layout="@layout/item_horizontal_member_list" />
+</LinearLayout>

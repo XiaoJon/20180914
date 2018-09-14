@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hjhq.teamface.statistic">
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/statistic_app_name"
+        android:supportsRtl="true">
+
+        <!--统计列表-->
+        <activity android:name=".ui.StatisticsActivity" />
+        <activity android:name=".ui.SelectSortActivity" />
+        <activity android:name=".ui.ReportDetailActivity" android:hardwareAccelerated="false"/>
+
+    </application>
+
+</manifest>

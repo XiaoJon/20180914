@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="15dp"
+    android:paddingStart="13dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_project_temp"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/project_item_bg" />
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/project_icon_over_state" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp">
+
+            <com.hjhq.teamface.common.view.CircularRingPercentageView
+                android:id="@+id/circle_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:circleRoundWidth="3dp"
+                app:circleTextColor="#999999"
+                app:circleTextSize="12sp"
+                app:circleWidth="70dp"
+                app:completeProgressColor="#3ACFAA"
+                app:roundColor="#66A0A0AE"
+                app:roundProgressColor="#3ACFAA" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                tools:text="75%" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_toEndOf="@+id/rl_progress"
+            android:maxLength="25"
+            android:text="中国储能大厦F45云端G-205装修及报价方案"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/project_icon_mark_selecter" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dip">
+
+            <EditText
+                android:id="@+id/content_et_edite"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="top"
+                android:hint="@string/say_something"
+                android:maxLength="1000"
+                android:maxLines="6"
+                android:padding="9dp"
+                android:textColorHint="#c8c8c8"
+                android:textSize="14sp" />
+
+            <com.hjhq.teamface.view.recycler.MyGridView
+                android:id="@+id/gv_imageitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dip"
+                android:background="@android:color/white"
+                android:horizontalSpacing="2dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:verticalSpacing="15dp"/>
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <!-- 定位 -->
+        <LinearLayout
+            android:id="@+id/location_ll"
+            style="@style/newItemLL"
+            android:layout_marginTop="8dp">
+
+            <TextView
+
+                style="@style/newItemLeftTv"
+                android:text="所在位置" />
+
+            <TextView
+                android:id="@+id/location_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_4a"
+                android:textSize="@dimen/text_size_14"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/newItemRightIv"
+                android:layout_marginLeft="@dimen/margin_border_size" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <!-- 提醒谁看 -->
+        <LinearLayout
+            android:id="@+id/teamwork_person_ll"
+            style="@style/newItemLL">
+
+            <TextView
+                style="@style/newItemLeftTv"
+                android:text="提醒谁看" />
+
+            <com.hjhq.teamface.basis.view.member.MembersView
+                android:id="@+id/team_member_view"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="@dimen/margin_border_size"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>

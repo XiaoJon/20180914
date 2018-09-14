@@ -1,0 +1,25 @@
+auto generated, do not change !!!! 
+
+HOST : filelib
+
+文件详情界面
+/file_detail
+
+文件库
+/netdisk
+
+文件在线预览
+/online_preview
+
+文件库中的项目文件夹
+/netdisk_project
+
+从文件库选择文件
+/select_filelibrary_file
+
+从文件库选择文件
+/select_file
+
+分享文件
+/shared_file
+

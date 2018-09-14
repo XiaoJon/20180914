@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filelib_file_root_company_folder_menu_array">
+        <item>成员管理</item>
+        <item>管理文件夹</item>
+        <item>删除文件夹</item>
+    </string-array>
+    <!--文件库相关-->
+    <string-array name="filelib_non_public_folder_menu_array">
+        <item>管理员设置</item>
+        <item>管理文件夹</item>
+        <item>移动</item>
+        <item>共享</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="filelib_child_folder_add_menu_array1">
+        <item>文件夹中上传</item>
+        <item>相册中上传</item>
+        <item>新建文件夹</item>
+    </string-array>
+    <string-array name="filelib_child_folder_add_menu_array2">
+        <item>文件夹中上传</item>
+        <item>相册中上传</item>
+    </string-array>
+    <string-array name="filelib_personal_folder_menu_array">
+        <item>管理文件夹</item>
+        <item>移动</item>
+        <item>共享</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="filelib_share_to_me_folder_menu_array">
+        <item>退出共享</item>
+    </string-array>
+    <string-array name="filelib_my_shared_folder_menu_array">
+        <item>取消共享</item>
+    </string-array>
+</resources>

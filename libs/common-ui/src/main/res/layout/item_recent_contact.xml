@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.hjhq.teamface.basis.view.SwipeMenuLayout
+
+        android:id="@+id/sml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/avatar_in_contacts_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/__picker_camera"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/avatar_in_contacts_iv"
+                android:lines="1"
+                android:textColor="@color/black_17"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/avatar_in_contacts_iv"
+                android:layout_toRightOf="@+id/avatar_in_contacts_iv"
+                android:lines="1"
+                android:textColor="@color/gray_bb"
+                android:textSize="@dimen/text_size_14"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/top_item"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@color/main_green"
+                android:gravity="center"
+                android:text="@string/im_pin_top"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/delete_item"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:background="@color/red_f4"
+                android:gravity="center"
+                android:text="@string/im_delete"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </com.hjhq.teamface.basis.view.SwipeMenuLayout>
+
+    <include layout="@layout/line"/>
+</LinearLayout>

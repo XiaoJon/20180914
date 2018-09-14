@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.attendance">
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name="com.hjhq.teamface.attendance.application.AttendanceApplication"
+        android:icon="@mipmap/logo"
+        android:label="@string/attendance_app_name"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="android:label,android:icon,android:theme,android:name">
+        <!-- <meta-data
+             android:name="com.amap.api.v2.apikey"
+             android:value="6bb6713d9c66d935c84e2ea64a722b80"/>-->
+        <activity android:name="com.hjhq.teamface.attendance.AttendanceTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--考勤主页-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AttendanceActivity"/>
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AddWorkScheduleActivity"/>
+        <activity android:name="com.hjhq.teamface.attendance.presenter.WorkScheduleActivity"/>
+        <!--打卡人数-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AttendanceNumActivity"/>
+        <!--打卡月历-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.MonthlyDataActivity"/>
+        <!--排行榜-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AttendanceRangeActivity"/>
+        <!--打卡规则-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AttendanceRulesActivity"/>
+        <!--考勤类型-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AttendanceTypeActivity"/>
+        <!--排班管理-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.WorkTimeManageActivity"/>
+        <!--添加考勤地址-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AddLocationActivity"/>
+        <!--添加考勤wifi-->
+        <activity android:name="com.hjhq.teamface.attendance.presenter.AddWifiActivity"/>
+        <!--规则设置-->
+        <activity android:name=".presenter.AddRulesActivity"/>
+        <!--添加审批单-->
+        <activity android:name=".presenter.AddApprovalActivity"/>
+        <!--审批单-->
+        <activity android:name=".presenter.AttendanceApprovalActivity"/>
+        <!--班次详情-->
+        <activity android:name=".presenter.ScheduleDetailActivity"/>
+        <!--其他设置-->
+        <activity android:name=".presenter.AdditionalSettingsActivity"/>
+        <!--打卡规则-->
+        <activity android:name=".presenter.AddGroupActivity"/>
+    </application>
+
+</manifest>

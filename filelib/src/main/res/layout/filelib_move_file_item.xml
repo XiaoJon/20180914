@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_conversation_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/rl_menu">
+
+
+        <RelativeLayout
+            android:id="@+id/bg"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filelib_move_file_unselected"
+                android:button="@null"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/check_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filelib_move_file_selected"
+                android:button="@null"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_conversation_avatar"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bg"
+            android:scaleType="fitXY"
+            tools:src="@drawable/icon_im_group"/>
+
+
+        <TextView
+            android:id="@+id/tv_conversation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_conversation_avatar"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:textColor="@color/black_4a"
+            android:textSize="16dp"
+            tools:text="张小发大水发发送到法师打发斯蒂芬放大法师打发打发是的发送天"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bb"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_conversation_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <com.hjhq.teamface.basis.view.SwipeMenuLayout
+
+        android:id="@+id/sml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/iv_conversation_avatar"
+                android:layout_width="@dimen/size_avatar"
+                android:layout_height="@dimen/size_avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/icon_im_group"/>
+
+
+            <TextView
+                android:id="@+id/tv_last_msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textColor="#3689E9"
+                android:textSize="14sp"
+                tools:text="上传 下载 预览"/>
+
+            <TextView
+                android:id="@+id/tv_conversation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_conversation_avatar"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="200dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black_4a"
+                android:textSize="@dimen/conversation_object_name"
+                tools:text="感慨感慨"/>
+
+            <ImageView
+                android:id="@+id/icon_admin"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/tv_conversation_title"
+                android:src="@drawable/icon_manager"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delete_item"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:background="@color/red_f4"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+    </com.hjhq.teamface.basis.view.SwipeMenuLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bb"/>
+
+</RelativeLayout>

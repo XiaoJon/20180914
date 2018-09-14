@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--this file is from form jMessage-->
+<resources>
+
+    <!--<declare-styleable name="HoloCircularProgressBar">-->
+    <!--<attr name="stroke_width" format="dimension" />-->
+    <!--<attr name="progress" format="float" />-->
+    <!--<attr name="marker_progress" format="float" />-->
+    <!--<attr name="progress_color" format="color" />-->
+    <!--<attr name="progress_background_color" format="color" />-->
+    <!--<attr name="thumb_visible" format="boolean" />-->
+    <!--<attr name="marker_visible" format="boolean" />-->
+    <!--<attr name="android:gravity" />-->
+    <!--</declare-styleable>-->
+
+    <attr name="circularProgressBarStyle" format="reference"/>
+
+
+
+
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float"/>
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer"/>
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0"/>
+            <enum name="behind" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="XlHRatingBar">
+        <attr name="starCount" format="integer"/><!--总的星星数-->
+        <attr name="canEdit" format="boolean"/><!--是否可以点击选择，有时候纯展示用不需要选择-->
+        <attr name="widthAndHeight" format="dimension"/><!--单个星星的宽度-->
+        <attr name="dividerWidth" format="dimension"/><!--星星左右间距-->
+        <attr name="countSelected" format="integer"/><!--当前已选中的星星个数-->
+        <attr name="stateResId" format="reference"/><!--单个星星不同状态下对应的图标-->
+        <attr name="differentSize" format="boolean"/><!--是否支持大小不等星星样式-->
+    </declare-styleable>
+
+
+    <!-- 聊天自定义消息 -->
+    <declare-styleable name="ChatCustomView">
+        <attr name="isSend" format="boolean"/><!--是否是自己发送的-->
+        <attr name="customType" format="string"/><!--自定义类型-->
+    </declare-styleable>
+    <!--饼状统计图-->
+    <declare-styleable name="PieChart">
+        <attr name="name" format="string"/>
+        <attr name="percentDecimal" format="integer"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <!-- 虚线 -->
+    <declare-styleable name="DashView">
+        <attr name="dashWidth" format="dimension"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="lineHeight" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="dashOrientation" format="integer"/>
+    </declare-styleable>
+    <!--下拉刷新-->
+    <declare-styleable name="RefreshRecyclerView">
+        <attr name="refresh_able" format="boolean"/>
+        <attr name="load_more_able" format="boolean"/>
+    </declare-styleable>
+</resources>

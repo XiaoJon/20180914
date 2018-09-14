@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/item_move3_iv_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/icon_default" />
+
+        <TextView
+            android:id="@+id/item_move3_tv_name"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_move3_iv_icon2"
+            tools:text="彭华娣 " />
+
+        <TextView
+            android:id="@+id/item_move3_tv_time2"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_move3_tv_name"
+            tools:text="12:35" />
+
+        <ImageView
+            android:id="@+id/item_move3_tv_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_move3_tv_name"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/item_move3_iv_icon2"
+            android:src="@drawable/icon_comment_voice" />
+
+        <TextView
+            android:id="@+id/item_move3_tv_voive_time"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_alignBottom="@+id/item_move3_tv_voice"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/item_move3_tv_voice"
+            tools:text="17''" />
+    </RelativeLayout>
+
+</LinearLayout>

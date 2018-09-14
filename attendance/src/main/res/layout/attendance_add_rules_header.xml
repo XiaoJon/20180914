@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#F8FBFE"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/star1"
+            android:text="@string/attendance_group_name_title"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/et_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tv_name1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/attendance_work_schedule_nane_title_hint"
+            android:maxLength="10"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_app_backgroud_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_header_2"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/star2"
+            android:text="@string/attendance_group_must_title"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <com.hjhq.teamface.basis.view.member.AddMemberView
+            android:id="@+id/member_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_name2"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_app_backgroud_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_header_3"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/star3"
+            android:text="@string/attendance_group_not_title"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <com.hjhq.teamface.basis.view.member.AddMemberView
+            android:id="@+id/member_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_name3"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

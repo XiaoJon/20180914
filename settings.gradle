@@ -1,0 +1,21 @@
+include ':base', ':common-ui', ':login', ':im', ':componentservice', ':project',
+        ':attendance', ':email', ':library', ':app', ':download', ':memo', ':custom',
+        ':statistic', ':emoji', ':filelib', ':custom-component', ':lib-zxing', ':photo-picker',
+        ':refresh-lib', ':wheel-lib'
+
+
+project(':photo-picker').projectDir = new File('libs/photo-picker')
+project(':wheel-lib').projectDir = new File('libs/wheel-lib')
+project(':refresh-lib').projectDir = new File('libs/refresh-lib')
+project(':lib-zxing').projectDir = new File('libs/lib-zxing')
+project(':base').projectDir = new File('libs/base')
+project(':emoji').projectDir = new File('libs/emoji')
+project(':download').projectDir = new File('libs/download')
+project(':library').projectDir = new File('libs/library')
+project(':componentservice').projectDir = new File('libs/componentservice')
+project(':common-ui').projectDir = new File('libs/common-ui')
+project(':im').projectDir = new File('libs/im')
+project(':custom-component').projectDir = new File('libs/custom-component')
+
+
+

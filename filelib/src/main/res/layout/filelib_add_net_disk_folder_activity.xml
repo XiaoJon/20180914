@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/line"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/_FF1D32"/>
+
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text11"
+            android:minWidth="100dp"
+            android:text="@string/filelib_add_folder_name"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/text12"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/filelib_please_input"
+            android:lines="1"
+            android:maxLength="12"
+            android:textColor="@color/black_4a"
+            android:textColorHint="@color/gray_d7"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/text21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"/>
+
+
+        <TextView
+            android:id="@+id/text22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text21"
+            android:minWidth="100dp"
+            android:text="@string/filelib_add_folder_color"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_folder_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/text22"
+            android:background="@color/_FF1D32"
+            android:src="@drawable/file_main"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_to_next"/>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/text31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"/>
+
+
+        <TextView
+            android:id="@+id/text32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text31"
+            android:minWidth="100dp"
+            android:text="@string/filelib_add_folder_type"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/next3"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_to_next"/>
+
+        <TextView
+            android:id="@+id/tv_folder_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/next3"
+            android:layout_toRightOf="@id/text32"
+            android:gravity="center"
+            android:text="@string/filelib_type_public"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/text41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"/>
+
+
+        <TextView
+            android:id="@+id/text42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text41"
+            android:minWidth="100dp"
+            android:text="@string/filelib_folder_manager"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"/>
+
+        <com.hjhq.teamface.basis.view.member.AddMemberView
+            android:id="@+id/mv_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/text42"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/text51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"/>
+
+
+        <TextView
+            android:id="@+id/text52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text51"
+            android:minWidth="100dp"
+            android:text="@string/filelib_folder_member_num2"
+            android:textColor="@color/black_4a"
+            android:textSize="16sp"/>
+
+        <com.hjhq.teamface.basis.view.member.AddMemberView
+            android:id="@+id/mv_member"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/text52"/>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:foreground="@drawable/project_card_view_selector"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <!-- 任务卡片 -->
+        <LinearLayout
+            android:id="@+id/task_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/project_item_task_background"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_check"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/project_task_item_check" />
+
+                <TextView
+                    android:id="@+id/tv_task_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_check"
+                    android:layout_toStartOf="@+id/iv_head"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="这里是任务这里是任务这里111111111111111"
+                    android:textColor="@color/_323232"
+                    android:textSize="@dimen/text_size_14" />
+
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_head_icon" />
+            </RelativeLayout>
+
+
+            <com.hjhq.teamface.common.view.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="38dp"
+                android:layout_marginStart="30dp">
+
+                <TextView
+                    android:id="@+id/tv_complete_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/orange_f5"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10"
+                    android:visibility="gone"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#EEEEEE"
+                    android:paddingBottom="2dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#5c5c69"
+                    android:textSize="@dimen/text_size_10"
+                    android:visibility="gone"
+                    tools:text="截止时间  8月9日 12:30" />
+
+                <TextView
+                    android:id="@+id/tv_sub_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="7dp"
+                    android:drawablePadding="2dp"
+                    android:drawableStart="@drawable/project_small_icon_sub_task"
+                    android:textColor="@color/gray_bb"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone"
+                    tools:text="23/56" />
+            </com.hjhq.teamface.common.view.FlowLayout>
+
+
+            <com.hjhq.teamface.common.view.FlowLayout
+                android:id="@+id/flow_picklist_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="38dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+        <!-- 审批卡片 -->
+        <LinearLayout
+            android:id="@+id/approve_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/project_task_list_bg"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="12dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/project_task_item_approve_icon" />
+
+                <TextView
+                    android:id="@+id/tv_approve_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/title_bar_txt_color"
+                    android:textSize="@dimen/text_size_14"
+                    tools:text="最新的内容的更新申" />
+
+                <ImageView
+                    android:id="@+id/iv_approve_head"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/default_head_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- 备忘录卡片 -->
+        <LinearLayout
+            android:id="@+id/memo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/project_task_list_bg"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="12dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_memo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/project_task_item_memo_icon" />
+
+                <TextView
+                    android:id="@+id/tv_memo_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/title_bar_txt_color"
+                    android:textSize="@dimen/text_size_14"
+                    tools:text="最新的内容的更新申请审批" />
+
+                <ImageView
+                    android:id="@+id/iv_memo_head"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/default_head_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- 自定义卡片 -->
+        <LinearLayout
+            android:id="@+id/custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/project_task_list_bg"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="12dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_custom_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/project_task_item_custom_icon" />
+
+                <TextView
+                    android:id="@+id/tv_custom_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/title_bar_txt_color"
+                    android:textSize="@dimen/text_size_14"
+                    tools:text="产品需求整理方案的最终确定程序和产品需求整理方案的最终确定程序和" />
+
+
+                <ImageView
+                    android:id="@+id/iv_custom_head"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/default_head_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

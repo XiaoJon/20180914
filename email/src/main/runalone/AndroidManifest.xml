@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.email">
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.hjhq.teamface.email.application.EmailApplication"
+        android:allowBackup="false"
+        android:label="@string/email_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        tools:replace="android:label">
+
+        <!--邮件独立运行主页-->
+        <activity android:name="com.hjhq.teamface.email.EmailTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--邮件主界面-->
+        <activity android:name="com.hjhq.teamface.email.presenter.EmailActivity3"/>
+        <!--邮件详情-->
+        <activity android:name="com.hjhq.teamface.email.presenter.EmailDetailActivity"/>
+        <!--新建邮件-->
+        <activity android:name="com.hjhq.teamface.email.presenter.NewEmailActivity"/>
+        <!--选择审批人-->
+        <activity android:name="com.hjhq.teamface.email.presenter.ChooseApprovalActivity"/>
+        <!--邮件选择联系人-->
+        <activity android:name="com.hjhq.teamface.email.presenter.ChooseEmailContactsActivity"/>
+        <!--邮件通讯录-->
+        <activity android:name="com.hjhq.teamface.email.presenter.EmailContactsActivity"/>
+        <!--从模块中选择联系人-->
+        <activity android:name="com.hjhq.teamface.email.presenter.ChooseModuleContactActivity"/>
+        <!--选择发送邮件账户-->
+        <activity android:name="com.hjhq.teamface.email.presenter.ChooseEmailAccountActivity"/>
+    </application>
+
+</manifest>

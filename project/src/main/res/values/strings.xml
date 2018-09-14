@@ -1,0 +1,97 @@
+<resources>
+    <string name="project_app_name">project</string>
+
+    <!--新增/编辑界面-->
+    <string name="project_title_in_add">项目名称</string>
+    <string name="project_scope_in_add">可见范围</string>
+    <string name="project_admin_in_add">负责人</string>
+
+    <string name="project_deadline_in_add">截止时间</string>
+    <string name="project_template_in_add">项目模板</string>
+    <string name="project_description_in_add">项目描述</string>
+    <string name="project_status_in_add">状态</string>
+    <string name="project_auth_in_add">仅协作人可见</string>
+    <string name="project_start_time_in_add">开始时间</string>
+    <string name="project_progress_in_add">项目进度</string>
+    <string name="project_act_delete_in_add">删除</string>
+    <string name="project_act_archive_in_add">归档</string>
+    <string name="project_pause_in_add">暂停</string>
+    <!--分享相关-->
+    <string name="project_share_title_in_add">分享标题</string>
+    <string name="project_share_content_in_add">分享内容</string>
+    <string name="project_share_to_in_add">分享人</string>
+    <string name="project_share_relevant_in_add">关联内容</string>
+    <string name="project_share_add_relevant_in_add">添加关联</string>
+    <string name="project_add_share">添加分享</string>
+    <string name="project_share_num">%s个点赞</string>
+    <string name="project_progress_num">下载中(%s)</string>
+
+    <string name="project_member_manager">成员管理</string>
+    <string name="project_member">项目成员</string>
+    <string name="project_role">项目角色</string>
+    <string name="project_visitor">访客</string>
+    <string name="project_folder_name_in_add">文件夹名称</string>
+    <string name="project_add_folder_title">新增文件夹</string>
+    <string name="project_add_group">新增任务分组</string>
+    <string name="project_add_list">添加列表</string>
+    <string name="project_manage_group">管理分组</string>
+    <!--文件库相关-->
+    <string name="project_add_voice_file">按下开始录音</string>
+    <string name="project_add_task_list">新建任务列表</string>
+    <string name="project_add_task_foot">添加…</string>
+
+
+    <!-- 任务 -->
+    <string name="project_associates">协作人</string>
+    <string name="project_look_associates">仅协作人可见</string>
+    <string name="project_relevance">关联</string>
+    <string name="project_be_relevance">被关联</string>
+    <string name="project_sub_task">子任务</string>
+    <string name="project_add_sub_task">添加子任务</string>
+    <string name="project_sub_task_detail">子任务详情</string>
+    <string name="project_sub_task_title">子任务标题</string>
+    <string name="project_add_relevance">添加关联</string>
+    <string name="project_look_status">查看状态</string>
+    <string name="project_like">点赞</string>
+    <string name="project_liked">已赞</string>
+    <string name="project_task_move_failed">任务移动失败</string>
+    <string name="project_task_list_move_failed">任务列表移动失败</string>
+    <string name="project_task_check">校验</string>
+    <string name="project_add_task">新建任务</string>
+    <string name="project_edit_task">编辑任务</string>
+    <string name="project_only_participant_visible">仅参与者可见</string>
+    <string name="project_template">模板</string>
+    <string name="project_temp">项目模板</string>
+    <string name="project_please_input_group_name">请输入分组名称</string>
+    <string name="project_please_input_list_name">请输入列表名称</string>
+    <string name="project_task_list_name">列表名称</string>
+    <string name="project_task_repeat_day">按天</string>
+    <string name="project_task_repeat_week">按周</string>
+    <string name="project_task_repeat_month">按月</string>
+    <string name="project_task_repeat_never">从不重复</string>
+    <string name="project_set_repeat">设置重复</string>
+    <string name="project_end_repeat">结束重复</string>
+    <string name="project_select_repeat_date">选择重复日期</string>
+
+
+    <string name="project_custom_remind">自定义提醒</string>
+    <string name="project_deadline_remind">截止时间提醒</string>
+    <string name="project_remind_time">提醒时间</string>
+    <string name="project_remind">提醒</string>
+    <string name="project_remind_way">提醒方式</string>
+
+
+    <string name="project_never">永不</string>
+    <string name="project_count">次数</string>
+    <string name="project_date">日期</string>
+
+    <string name="project_week1">星期一</string>
+    <string name="project_week2">星期二</string>
+    <string name="project_week3">星期三</string>
+    <string name="project_week4">星期四</string>
+    <string name="project_week5">星期五</string>
+    <string name="project_week6">星期六</string>
+    <string name="project_week7">星期日</string>
+
+    <string name="project_group_name"><Data><font color='#F94C4A'>*</font><font color='#141414'>分组名称</font></Data></string>
+</resources>

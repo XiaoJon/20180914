@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:minHeight="85dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="考勤管理员"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <com.hjhq.teamface.basis.view.member.AddMemberView
+                    android:id="@+id/member_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/text11"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl21"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="打卡提醒"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/attendance_closed_icon"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>f
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl22"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set221"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text221"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set221"
+                    android:text="上班提前分钟，提醒员工打上班卡"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="请设置分钟数"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl23"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set231"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text231"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set231"
+                    android:text="上班推后分钟，提醒员工打下班卡"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text232"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set231"
+                    android:text="请设置分钟数"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl31"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="榜单设置"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/attendance_closed_icon"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl32"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set321"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text322"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@+id/set321"
+                    android:text="榜单统计方式"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text323"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set321"
+                    android:ellipsize="end"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:lines="1"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl33"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set331"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text332"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set331"
+                    android:text="早到榜"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set331"
+                    android:ellipsize="end"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:lines="1"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl34"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set341"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text342"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set341"
+                    android:text="勤勉榜"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text343"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set341"
+                    android:ellipsize="end"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:lines="1"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl35"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set351"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text352"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set351"
+                    android:text="迟到榜"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text353"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set351"
+                    android:ellipsize="end"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:lines="1"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl36"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set361"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text362"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set361"
+                    android:text="迟到排序规则"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text363"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set361"
+                    android:ellipsize="end"
+                    android:hint="@string/attendance_please_select_hint"
+                    android:lines="1"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl41"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="晚走晚到"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow4"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/attendance_closed_icon"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl42"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set421"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/add_new"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set421"
+                    android:text="新增晚走晚到规则"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl51"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="人性化班次"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow5"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/attendance_closed_icon"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl52"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set521"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text521"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set521"
+                    android:text="@string/attendance_late_max_times_label"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text522"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set521"
+                    android:hint="@string/attendance_values_hint"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl53"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set531"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text531"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set531"
+                    android:text="@string/attendance_late_max_minute_label"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text532"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set531"
+                    android:hint="@string/attendance_values_hint"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl61"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="旷工规则"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow6"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/attendance_closed_icon"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl62"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set621"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text621"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set621"
+                    android:text="@string/attendance_late_to_absent_label"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text622"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set621"
+                    android:hint="@string/attendance_values_hint"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl63"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginBottom="10dp"
+                android:background="#F8FBFE"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/set631"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_blue"/>
+
+                <TextView
+                    android:id="@+id/text631"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/set631"
+                    android:text="@string/attendance_leave_max_minute_label"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/text632"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/set631"
+                    android:hint="@string/attendance_values_hint"
+                    android:textColor="@color/attendance_333333"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/default_app_backgroud_color"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

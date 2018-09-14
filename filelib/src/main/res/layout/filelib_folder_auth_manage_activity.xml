@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/text11"
+                android:minWidth="100dp"
+                android:text="@string/filelib_add_folder_type"
+                android:textColor="@color/black_4a"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_open_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/text12"
+                android:background="@color/white"
+                android:lines="1"
+                android:textColor="@color/black_4a"
+                android:textSize="16sp"
+                tools:text="公开（企业所有成员可见此文件夹）"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/__picker_gray_f2">
+
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:lines="1"
+                android:text="@string/filelib_folder_admin"
+                android:textColor="@color/black_4a"
+                android:textSize="16sp"/>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/next3"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/member_add_icon"/>
+
+            <TextView
+                android:id="@+id/text32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/next3"
+                android:minWidth="100dp"
+                android:text="@string/add"
+                android:textColor="@color/black_4a"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl6"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/__picker_gray_f2">
+
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:lines="1"
+                android:text="@string/filelib_folder_member"
+                android:textColor="@color/black_4a"
+                android:textSize="16sp"/>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl7"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/next7"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/member_add_icon"/>
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/next7"
+                android:minWidth="100dp"
+                android:text="@string/add"
+                android:textColor="@color/black_4a"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

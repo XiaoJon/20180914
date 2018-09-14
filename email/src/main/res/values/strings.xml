@@ -1,0 +1,13 @@
+<resources>
+    <string name="email_app_name">邮件</string>
+
+    <string name="email_recently_contacts2">最近联系人</string>
+    <string name="email_clear_recently_contacts">清空</string>
+    <string name="email_file_size_10m_limit">当前为非WiFi网络环境,且文件总大小超过10M,是否继续？</string>
+    <string name="email_reply_add">回复:</string>
+    <string name="email_transmit_add">转发:</string>
+    <string name="email_timed_hint">定时邮件，将在%s发出</string>
+    <string name="email_operation_hint">提示</string>
+    <string name="email_sdcard_not_exist_toast">暂无外部存储</string>
+
+</resources>

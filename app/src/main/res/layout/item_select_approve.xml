@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/cb_member_selector_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/tv_approve_state"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black_17"
+            android:textSize="@dimen/text_size_16"
+            tools:text="最新的内容的更新申请审批" />
+
+        <TextView
+            android:id="@+id/tv_approve_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/approve_corner_background_blue"
+            android:maxEms="6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            tools:text="审批中" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawablePadding="5dp"
+            android:textColor="@color/gray_a0"
+            android:textSize="@dimen/text_size_12"
+            tools:text="申请时间：2017-10-16  18:06" />
+    </RelativeLayout>
+
+</LinearLayout>

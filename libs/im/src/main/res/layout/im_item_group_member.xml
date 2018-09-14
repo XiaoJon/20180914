@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/jmui_head_icon"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:ems="10"
+        android:gravity="left"
+        android:lines="1"
+        android:textColor="@color/gray_69"
+        android:visibility="visible"
+        tools:text="纪淑媛"/>
+
+    <TextView
+        android:id="@+id/department_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:ems="10"
+        android:gravity="left"
+        android:lines="1"
+        android:textColor="@color/gray_bb"
+        android:visibility="visible"
+        tools:text="产品开发部 - 技术员"/>
+
+    <ImageView
+        android:id="@+id/choosed"
+        android:layout_width="21dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/finish"
+        android:visibility="gone"
+        tools:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_app_backgroud_color"/>
+
+
+</RelativeLayout>

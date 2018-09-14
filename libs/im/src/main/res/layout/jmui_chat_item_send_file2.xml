@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/jmui_chat_item_send_layout">
+
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style"
+
+        android:textColor="@color/white"
+        tools:text="12:34"/>
+
+    <ImageView
+        android:id="@+id/jmui_sender_avatar_iv"
+        style="@style/jmui_chat_item_sender_avatar_style"
+        android:layout_below="@+id/jmui_send_time_txt"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_send_file"
+        android:layout_width="220dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/jmui_send_time_txt"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@+id/jmui_sender_avatar_iv"
+        android:background="@drawable/jmui_msg_send_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_send_file_icon"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tv_send_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_send_file_icon"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/iv_send_file_icon"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:text="文件名"/>
+
+        <TextView
+            android:id="@+id/tv_send_file_sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_send_file_icon"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/iv_send_file_icon"
+            android:ellipsize="end"
+            android:maxWidth="100dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:text="花花花"/>
+
+        <TextView
+            android:id="@+id/tv_send_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_send_file_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_send_file_sender_name"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:text="12.5MB"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/jmui_sending_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/jmui_msg_content_send"
+        android:src="@drawable/jmui_sending_img"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_send_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rl_send_file"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/rl_send_file"
+        android:textColor="@color/gray_bb"
+        android:textSize="12sp"
+        tools:text="发送中"/>
+
+    <ImageButton
+        android:id="@+id/jmui_fail_resend_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/jmui_msg_content_send"
+        android:background="@drawable/jmui_send_error"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
+</RelativeLayout>

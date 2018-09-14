@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="memo_main_menu_array">
+        <item>全部备忘</item>
+        <item>我创建的</item>
+        <item>共享给我</item>
+        <item>已删除</item>
+    </string-array>
+    <string-array name="memo_main_title_array">
+        <item>备忘录(全部)</item>
+        <item>备忘录(我的)</item>
+        <item>备忘录(共享)</item>
+        <item>备忘录(删除)</item>
+    </string-array>
+</resources>

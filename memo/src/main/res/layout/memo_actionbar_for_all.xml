@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:src="@drawable/memo_all_menu_icon"/>
+
+    <TextView
+        android:id="@+id/tv_memo_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="#909090"
+        android:textSize="12dp"
+        tools:text="0项备忘"/>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:src="@drawable/memo_all_add_memo"
+        android:textColor="#909090"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#909090"/>
+</RelativeLayout>
+

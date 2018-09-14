@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/empty_iv"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/workbench_empty"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_iv"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/gray_bb"
+            android:textSize="@dimen/text_size_16"
+            tools:text="暂无项目，快去新建项目吧"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_new_project_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_memo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="养成良好的记录备忘习惯\n有助于工作的顺利展开！"
+                android:textColor="#666666"
+                android:textSize="14dp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/new_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+
+            <TextView
+                android:id="@+id/new_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text_size_16"
+                tools:text="新建项目"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_sales_record"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <View
+            android:id="@+id/view_block"
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/orange"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/view_block"
+            android:text="销售情况"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/content1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxWidth="120dp"
+            android:text="总销量"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/content1_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            tools:text="20台"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/content2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxWidth="90dp"
+            android:text="总销售额"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/content2_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            tools:text="5,000.00元"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/content3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxWidth="90dp"
+            android:text="平均销售单价"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/content3_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            tools:text="5,000.00元"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/content4_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxWidth="90dp"
+            android:text="内容条目3"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/content4_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:textSize="14sp"
+            tools:text="25条"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/content5_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxWidth="90dp"
+            android:text="内容条目3"
+            android:textColor="@color/orange"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/content5_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:text="25条"
+            android:textColor="@color/orange"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_goto_sales_detail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/tv_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:lines="1"
+            android:text="查看全部销售记录"
+            android:textColor="@color/gray_a0"
+            android:textSize="12sp"/>
+
+        <View
+            android:id="@+id/v_devide_line_vertical"
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_view_all"
+            android:background="@color/gray_a0"/>
+
+        <TextView
+            android:id="@+id/tv_view_all_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/v_devide_line_vertical"
+            android:lines="1"
+            android:textColor="@color/gray_a0"
+            android:textSize="12sp"
+            tools:text="22"/>
+
+        <ImageView
+            android:id="@+id/category_choosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_to_next"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

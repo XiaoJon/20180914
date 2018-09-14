@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/item_move1_iv_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/default_head_icon" />
+
+        <TextView
+            android:id="@+id/item_move1_tv_name"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_move1_iv_icon2"
+            tools:text="张悦" />
+
+        <TextView
+            android:id="@+id/item_move1_tv_time2"
+            style="@style/custom_newGray69Size14Tv"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_move1_tv_name"
+            tools:text="12:30" />
+
+        <TextView
+            android:id="@+id/item_move1_tv_pubDesc"
+            style="@style/custom_newContentSize14Tv"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_move1_tv_name"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/item_move1_iv_icon2"
+            tools:text="日本架空科幻作品《全金属狂潮》（FULL METAL PANIC台译“惊爆危机”）中出现的人形强袭武器，主要为陆战兵器，理论上可以实现人类所有的战术动作，拥有前所未有的战术灵活性。AS全称“主从追随式机甲系统”（Armored mobile master-Slave system），通称ARM SLAVE（强袭机兵）" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_margin" />
+</LinearLayout>

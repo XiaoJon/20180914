@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="77dp"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/card_diy_style_unselected">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/diy_card_field_selected"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#999999"
+            android:textSize="14dp"
+            tools:text="Logo"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

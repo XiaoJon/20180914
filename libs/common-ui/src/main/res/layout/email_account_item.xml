@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_select"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_unselect"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/rl_select"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_expression_hover"
+            tools:text="yoko1414@yahoo.com"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+</LinearLayout>

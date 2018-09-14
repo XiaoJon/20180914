@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/__picker_gray_f2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/change_phone_hint"
+        android:textColor="@color/gray_99"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前手机号: "
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            tools:text="13528885786" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        style="@style/settingItemLL"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            style="@style/settingItemLeftTv"
+            android:layout_width="66dp"
+            android:text="国家地区"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="中国"
+            android:textColor="@color/black_22"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_margin"/>
+
+    <LinearLayout style="@style/settingItemLL">
+
+        <TextView
+            style="@style/settingItemLeftTv"
+            android:layout_width="66dp"
+            android:text="+86"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="20dp"
+                android:inputType="phone"
+                android:background="@null"
+                android:hint="请填写手机号码"
+                android:maxLength="11"
+                android:textColor="@color/black_22"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:id="@+id/iv_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/clear_button"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/setting_button_corner_select"
+        android:enabled="false"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20" />
+
+</LinearLayout>

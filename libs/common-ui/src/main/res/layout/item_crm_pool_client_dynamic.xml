@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <View
+            android:id="@+id/view_block"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/crm_pool_client_dynamic_dot_main_blue" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/view_block"
+            android:textSize="14sp"
+            tools:text="2017年4月18日" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <View
+            android:id="@+id/v_devide_line_vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="52dp"
+            android:background="@color/app_blue" />
+
+        <RelativeLayout
+            android:id="@+id/rl_ctact_people1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/gray_a0"
+                android:textSize="12dp"
+                tools:text="花花花" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/gray_a0"
+                android:textSize="12dp"
+                tools:text="12:34" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="10dp"
+                tools:text="将客户转移给“周舟”将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给将客户转移给" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

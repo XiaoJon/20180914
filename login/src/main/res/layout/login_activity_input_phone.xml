@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:paddingBottom="40dp">
+
+    <ImageView
+        android:id="@+id/iv_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:orientation="vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_input_phonenumber"
+                android:textColor="@color/black_17"
+                android:textSize="@dimen/text_size_18"/>
+
+            <EditText
+                android:id="@+id/phone_et"
+                style="@style/login_inputPhone"
+                android:layout_marginTop="15dp"
+                android:hint="@string/login_input_phonenumber"
+                android:inputType="phone"
+                android:maxLength="11"
+                tools:text="546554654"/>
+
+            <Button
+                android:id="@+id/next_step_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_selector_btn_green"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/next_step"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/service_agreement_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_next_step_agree"
+                android:textColor="@color/black_17"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_service_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_register_agreement"
+                android:textColor="@color/url_color"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

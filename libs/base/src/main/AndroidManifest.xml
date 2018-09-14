@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hjhq.teamface.basis">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application>
+        <activity
+            android:name=".network.utils.DialogProgressActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Dialog_Progress"/>
+    </application>
+</manifest>

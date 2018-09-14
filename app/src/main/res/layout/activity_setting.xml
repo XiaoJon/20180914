@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/__picker_gray_f2"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_change_password"
+            style="@style/settingItemLL"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/settingItemLeftTv"
+                android:text="@string/change_password"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView style="@style/newItemRightIv"/>
+        </LinearLayout>
+
+        <include layout="@layout/line_margin"/>
+
+        <LinearLayout
+            android:id="@+id/ll_change_phone"
+            style="@style/settingItemLL">
+
+            <TextView
+                style="@style/settingItemLeftTv"
+                android:text="@string/change_phone"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/settingItemLeftTv"
+                tools:text="13528885786"/>
+
+            <ImageView style="@style/newItemRightIv"/>
+        </LinearLayout>
+
+        <include layout="@layout/line_margin"/>
+
+        <LinearLayout
+            android:id="@+id/ll_change_language"
+            style="@style/settingItemLL">
+
+            <TextView
+                style="@style/settingItemLeftTv"
+                android:text="@string/language"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView style="@style/newItemRightIv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_weixin"
+            style="@style/settingItemLL"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/settingItemLeftTv"
+                android:text="@string/bind_weixin"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sbtn_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="15dp"
+                android:enabled="false"
+                app:kswAnimationDuration="300"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.4"
+                app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                app:kswThumbMarginBottom="-8dp"
+                app:kswThumbMarginLeft="-5dp"
+                app:kswThumbMarginRight="-5dp"
+                app:kswThumbMarginTop="-2.5dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/settingItemLL"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                style="@style/settingItemLeftTv"
+                android:text="@string/setting_upload_download"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/size_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="15dp"
+                android:checked="true"
+                app:kswAnimationDuration="300"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.4"
+                app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                app:kswThumbMarginBottom="-8dp"
+                app:kswThumbMarginLeft="-5dp"
+                app:kswThumbMarginRight="-5dp"
+                app:kswThumbMarginTop="-2.5dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_clear_cache"
+            style="@style/settingItemLL"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/settingItemLeftTv"
+                android:text="清空缓存"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_16"
+                tools:text="1.8M"/>
+
+            <ImageView style="@style/newItemRightIv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_version"
+            style="@style/settingItemLL"
+            android:layout_marginTop="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/settingItemLeftTv"
+                tools:text="当前版本:1.0.4"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="检查更新"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_16"/>
+
+            <ImageView style="@style/newItemRightIv"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="65dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/black_4a"
+            android:textSize="@dimen/text_size_16"/>
+
+
+    </LinearLayout>
+</ScrollView>

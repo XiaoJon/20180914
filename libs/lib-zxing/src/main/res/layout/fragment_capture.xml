@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <com.hjhq.lib_zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:inner_corner_color="#FF7422"
+        app:inner_corner_length="20dp"
+        app:inner_corner_width="3dp"
+        app:inner_height="200dp"
+        app:inner_margintop="200dp"
+        app:inner_scan_iscircle="false"
+        app:inner_scan_speed="10"
+        app:inner_width="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@id/viewfinder_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingTop="400dp"
+        android:text="请将二维码置于扫描框内"
+        android:textColor="#EAEAEA"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/main_back"/>
+
+        <TextView
+            android:id="@+id/fragment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="扫一扫"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/open"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="30dp"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="打开闪光灯"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="关闭闪光灯"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

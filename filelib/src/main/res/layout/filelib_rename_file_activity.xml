@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/default_app_backgroud_color"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/line_margin_10dp"/>
+
+    <include layout="@layout/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:text="*"
+            android:textColor="@color/red_f4"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/tv_star"
+            android:text="文件名称"
+            android:textColor="@color/gray_69"
+            android:textSize="14sp"/>
+
+
+        <EditText
+            android:id="@+id/et_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_slogan"
+            android:layout_below="@id/tv_slogan"
+            android:layout_marginBottom="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="输入新的文件名称(20字以内)"
+            android:labelFor="@+id/et_sign"
+            android:maxLength="20"
+            android:paddingRight="15dp"
+            android:textColor="@color/black_4a"
+            android:textSize="@dimen/text_size_20"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

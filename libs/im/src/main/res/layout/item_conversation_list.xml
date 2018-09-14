@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_conversation_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:clipChildren="false">
+
+    <com.hjhq.teamface.basis.view.SwipeMenuLayout
+
+        android:id="@+id/sml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/touch_bg">
+
+            <ImageView
+                android:id="@+id/iv_conversation_avatar"
+                android:layout_width="@dimen/size_avatar"
+                android:layout_height="@dimen/size_avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/icon_im_group"/>
+            <!--消息数量-->
+            <TextView
+                android:id="@+id/tv_conversation_unread_num"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/iv_conversation_avatar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/unread_msg_num_size"
+                android:visibility="gone"
+                tools:text="1fs"/>
+
+
+            <TextView
+                android:id="@+id/tv_last_msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                tools:text="下午 15:30"/>
+
+            <TextView
+                android:id="@+id/tv_conversation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/tv_last_msg_time"
+                android:layout_toRightOf="@id/iv_conversation_avatar"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black_4a"
+                android:textSize="@dimen/conversation_object_name"
+                tools:text="张小发大水发发送到法师打发斯蒂芬放大法师打发打发是的发送天"/>
+
+
+            <TextView
+                android:id="@+id/tv_last_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_conversation_avatar"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/tv_conversation_unread_num"
+                android:layout_toRightOf="@id/iv_conversation_avatar"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:text="公司聊天内容公司聊天内容5363456345635公司聊天内容dfdsfsd"
+                android:textColor="@color/gray_bb"
+                android:textSize="@dimen/text_size_12"/>
+
+
+            <ImageView
+                android:id="@+id/iv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/team_top"
+                android:visibility="gone"/>
+
+            <include
+                layout="@layout/line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/top_item"
+                android:layout_width="80dp"
+                android:layout_height="64dp"
+                android:background="@color/main_green"
+                android:gravity="center"
+                android:text="@string/pin_top"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/delete_item"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:background="@color/red_f4"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+    </com.hjhq.teamface.basis.view.SwipeMenuLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bb"/>
+
+   <!-- <com.hjhq.teamface.common.view.DragBallView
+        android:id="@+id/drag_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="2dp"/>-->
+
+</RelativeLayout>

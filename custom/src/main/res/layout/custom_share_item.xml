@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_option"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#F4F6F9"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/edit"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|right"
+            android:text="编辑"
+            android:textColor="@color/gray_69"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/delete_gray"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="删除"
+            android:textColor="@color/calendar_select_bg"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/custom_horizontal_layout_style">
+
+        <TextView
+            style="@style/custom_multi_text_horizontal_title_style"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="11dp"
+            android:text="共享给"
+            android:textColor="@color/gray_69" />
+
+        <com.hjhq.teamface.basis.view.member.MembersView
+            android:id="@+id/member_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_select"
+        style="@style/custom_horizontal_layout_style">
+
+        <TextView
+            style="@style/custom_input_horizontal_title_style"
+            android:layout_marginStart="5dp"
+            android:text="访问权限"
+            android:textColor="@color/gray_69" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/custom_select_horizontal_content_style"
+            android:text="只读"
+            android:textColor="@color/black_17" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/custom_default_icon_style"
+            android:src="@drawable/icon_to_next" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

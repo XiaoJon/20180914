@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="login_" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/gray_e7</item>
+        <item name="colorControlActivated">@color/gray_e7</item>
+    </style>
+
+    <!-- 登录输入框样式 -->
+    <style name="login_EditText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">#99FFFFFF</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+
+    <style name="loginEt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColorHint">@color/gray_bb</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+
+    <!-- 登录界面输入框的样式 -->
+    <style name="loginUIEt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:theme">@style/login_EditText</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColorHint">#80FFFFFF</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <!-- MD风格输入框的样式 -->
+    <style name="login_inputPhone">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:theme">@style/login_EditText</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColorHint">@color/gray_bb</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <!-- 验证码 -->
+    <style name="login_text_editStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_user_verify_code_grey</item>
+        <item name="android:textColor">@color/main_green</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+</resources>

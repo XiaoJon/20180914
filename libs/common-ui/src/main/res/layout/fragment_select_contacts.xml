@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:focusable="true"
+             android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="正在获取联系人数据..."
+        android:textColor="@color/gray_bb"
+        android:textSize="@dimen/text_size_14"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDEDED"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/search_edit_text"
+            style="@style/StyleEditText"
+            android:gravity="center"
+            android:hint="搜索成员"/>
+
+        <include
+            android:id="@+id/choose_group"
+            layout="@layout/contacts_select_group_chat"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/group_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/icon_select_group"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择一个群"
+                android:textColor="@color/black_17"
+                android:textSize="@dimen/text_size_15"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line10"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/default_app_backgroud_color"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/company_member_contacts_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_org_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/company_contacts"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="组织架构"
+                android:textColor="@color/black_17"
+                android:textSize="@dimen/text_size_15"/>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/side_dialog_bg"
+        android:gravity="center"
+        android:textColor="@color/main_green"
+        android:textSize="30.0dip"
+        android:visibility="invisible"
+        tools:text="A"
+        tools:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.hjhq.teamface.common.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"/>
+    </RelativeLayout>
+</FrameLayout>

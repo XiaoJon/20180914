@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_dialog_input"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:paddingEnd="25dp"
+                    android:paddingStart="18dp"
+                    android:paddingTop="18dp">
+
+                    <ImageView
+                        android:id="@+id/mine_avatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="7dp"
+                        tools:src="@drawable/ic_expression_hover" />
+
+
+                    <TextView
+                        android:id="@+id/mine_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/mine_avatar"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        tools:text="彭华娣" />
+
+                    <TextView
+                        android:id="@+id/tv_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mine_name_tv"
+                        android:layout_marginTop="8dp"
+                        android:layout_toStartOf="@+id/mine_avatar"
+                        android:hint="添加工作状态…"
+                        android:textColor="#999999"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mine_company_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="50dp"
+                        android:textColor="#333333"
+                        android:textSize="14dp"
+                        tools:text="汇聚华企科技有限公司" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_card"
+                    style="@style/MineItemLayout"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/my_card"
+                        android:textColor="#333333"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/icon_like"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_qr_code" />
+
+                    <ImageView
+                        style="@style/MineItemRightIv"
+                        android:src="@drawable/icon_to_next" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--同事圈-->
+        <LinearLayout
+            android:id="@+id/mine_friends"
+            style="@style/MineItemLayout">
+
+            <ImageView
+                style="@style/MineItemLeftIv"
+                android:src="@drawable/icon_friends_me" />
+
+            <TextView
+                style="@style/MineItemTvTitle"
+                android:text="同事圈" />
+
+            <TextView
+                style="@style/MineItemTvSub"
+                tools:text="帅胜余 发表了新内容" />
+
+            <ImageView
+                android:id="@+id/iv_add_friend"
+                style="@style/MineItemRightIv"
+                android:src="@drawable/icon_camera_me" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/__picker_gray_f2" />
+        <!--收藏-->
+        <LinearLayout
+            android:id="@+id/mine_collection"
+            style="@style/MineItemLayout">
+
+            <ImageView
+                style="@style/MineItemLeftIv"
+                android:src="@drawable/icon_collection_me" />
+
+            <TextView
+                style="@style/MineItemTv"
+                android:text="我的收藏" />
+
+            <ImageView
+                style="@style/MineItemRightIv"
+                android:src="@drawable/icon_to_next" />
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+
+        <!--帮助-->
+        <LinearLayout
+            android:id="@+id/mine_online_help"
+            style="@style/MineItemLayout">
+
+            <ImageView
+                style="@style/MineItemLeftIv"
+                android:src="@drawable/icon_online_help" />
+
+            <TextView
+                style="@style/MineItemTv"
+                android:text="在线帮助" />
+
+            <ImageView
+                style="@style/MineItemRightIv"
+                android:src="@drawable/icon_to_next" />
+        </LinearLayout>
+
+        <include layout="@layout/line" />
+        <!--关于-->
+        <LinearLayout
+            android:id="@+id/mine_about"
+            style="@style/MineItemLayout">
+
+            <ImageView
+                style="@style/MineItemLeftIv"
+                android:src="@drawable/mine_about" />
+
+            <TextView
+                style="@style/MineItemTv"
+                android:text="关于Teamface" />
+
+            <ImageView
+                style="@style/MineItemRightIv"
+                android:src="@drawable/icon_to_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/__picker_gray_f2" />
+        <!--关于-->
+        <LinearLayout
+            android:id="@+id/mine_setting"
+            style="@style/MineItemLayout">
+
+            <ImageView
+                style="@style/MineItemLeftIv"
+                android:src="@drawable/icon_mine_setting" />
+
+            <TextView
+                style="@style/MineItemTv"
+                android:text="@string/setting" />
+
+            <ImageView
+                style="@style/MineItemRightIv"
+                android:src="@drawable/icon_to_next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

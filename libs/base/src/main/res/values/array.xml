@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--企信相关-->
+    <string-array name="im_menu_array">
+        <item>发起群聊</item>
+        <item>发起私聊</item>
+        <item>选择群聊</item>
+    </string-array>
+    <!--企信主界面菜单-->
+    <string-array name="im_menu_array_v2">
+        <item>发起聊天</item>
+        <item>扫一扫</item>
+    </string-array>
+</resources>

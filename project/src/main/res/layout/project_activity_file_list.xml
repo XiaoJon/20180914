@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_app_backgroud_color"
+                android:orientation="vertical">
+
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/magic_indicator"
+        android:layout_marginTop="1px"
+        android:background="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/fl_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.hjhq.teamface.common.view.RecordVoiceButton
+            android:id="@+id/jmui_voice_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/jmui_voice_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/project_add_voice_file"
+            android:textColor="@color/gray_a0"
+            android:textSize="14sp"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+</RelativeLayout>
